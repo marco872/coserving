@@ -34,4 +34,16 @@ class Project(models.Model):
 	def __str__(self):
 		return self.location
 
+class Liquidity_Pool(models.Model):
+	STATUS = (
+		('Starting', 'Starting'),
+		('Filling-up', 'Filling-up'),
+		('Completed', 'Completed'),
+		)
+
+	total_project_price = models.FloatField(null=True)
+	liq_pool_name = models.CharField(max_length=200, null=True)
+	liq_pool_price = models.FloatField(null=True)
+	date_created = models.DateTimeField(auto_now_add=True, null=True)
+	status = models.CharField(max_length=200, null=True, choices=STATUS)
 
