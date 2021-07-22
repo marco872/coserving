@@ -1,0 +1,31 @@
+
+
+#logo{
+    	width: 46px;
+    	height: 46px;
+   		border-radius: 50%;
+    	overflow: hidden;
+    	margin-top: -6px;
+	}
+
+	
+
+	body{
+		background-color: #ebeff5;		
+	 
+	}
+
+	#total-pools{
+		background-color: #4cb4c7;
+	}
+			
+	#filling-up_pools{
+		background-color: #7abecc;
+
+	}
+
+	#completed-pools{
+		background-color: #7CD1C0;
+	}
+		
+	

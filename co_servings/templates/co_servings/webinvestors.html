@@ -1,0 +1,86 @@
+{% extends 'co_servings/main.html' %}
+
+{% block content %}
+
+
+
+      <br>
+
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+			<h5>WebInvestors:</h5>
+			<hr>
+			<a class="btn btn-outline-info btn-5m btn-block"href="">Update WebInvestor</a>
+			<a class="btn btn-outline-danger btn-5m btn-block"href="">Delete WebInvestor</a>
+		
+		</div>
+	</div>
+
+	<div class="col-md">
+		<div class="card card-body">
+			<h5>Contact Information:</h5>
+			<hr>
+			<p>Email:{{webinvestor.email}}</p>
+			<p>Phone:{{webinvestor.phone}}</p>
+		
+		</div>
+	</div>
+	<div class="col-md">
+		<div class="card card-body">
+			<h5>Total Pool:</h5>
+			<hr>
+			<h1 style="text-align: center;padding: 10px"></h1>
+		
+		</div>
+	</div>
+</div>
+
+
+
+<br>
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+			<form method="get">
+
+			<button class="btn btn-primary" type="submit">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+<br>
+
+<div class="row">
+	<div class="col-md">
+		
+		<div class="card card-body">
+			 <h5>PROJECTS:</h5>
+		</div>
+		<div class="card card-body">
+			
+			<table class="table table-5m">
+				<tr>
+					<th>Property</th>
+					<th>Location</th>
+					<th>Dimension</th>
+					<th>Category</th>
+					<th>Building</th>
+					<th>Typology</th>
+					
+				</tr>
+				
+				
+			</table>
+				
+		</div>
+		
+	</div>
+
+</div>
+
+   
+
+{% endblock content %}
+
