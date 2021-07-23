@@ -12,6 +12,7 @@ class Webinvestor(models.Model):
 
 
 class Project(models.Model):
+
 	CATEGORY = (
 		('Guestroom', 'Guestroom'),
 		('Display area', 'Dispaly area'),
@@ -36,6 +37,7 @@ class Project(models.Model):
 	
 
 class Liquidity_Pool(models.Model):
+
 	STATUS = (
 		('Starting', 'Starting'),
 		('Filling-up', 'Filling-up'),

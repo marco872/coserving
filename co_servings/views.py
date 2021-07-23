@@ -13,4 +13,5 @@ def projects(request):
 	return render(request, 'co_servings/projects.html', {'list': projects})
 
 def webinvestors(request):
-	return render(request, 'co_servings/webinvestors.html')
+	projects = Project.objects.all()
+	return render(request, 'co_servings/webinvestors.html', {'list': projects})
