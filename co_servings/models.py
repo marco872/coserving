@@ -10,6 +10,7 @@ class Webinvestor(models.Model):
 	def __str__(self):
 		return self.name
 
+
 class Project(models.Model):
 	CATEGORY = (
 		('Guestroom', 'Guestroom'),
@@ -29,10 +30,10 @@ class Project(models.Model):
 	total_project_price = models.FloatField(null=True) #project price+building price
 	date_created = models.DateTimeField(auto_now_add=True, null=True)
 
-
-	
 	def __str__(self):
 		return self.location
+	
+	
 
 class Liquidity_Pool(models.Model):
 	STATUS = (
@@ -40,10 +41,23 @@ class Liquidity_Pool(models.Model):
 		('Filling-up', 'Filling-up'),
 		('Completed', 'Completed'),
 		)
-
-	total_project_price = models.FloatField(null=True)
-	liq_pool_name = models.CharField(max_length=200, null=True)
-	liq_pool_price = models.FloatField(null=True)
+	name = models.CharField(max_length=200, null=True)
+	price = models.FloatField(null=True)
 	date_created = models.DateTimeField(auto_now_add=True, null=True)
 	status = models.CharField(max_length=200, null=True, choices=STATUS)
+
+	def __str__(self):
+		return self.name
+
+	
+
+
+
+class Investment(models.Model):
+	webinvestor = models.ForeignKey(Webinvestor, null=True, on_delete= models.SET_NULL)
+	liquidity_pool = models.ForeignKey(Liquidity_Pool, null=True, on_delete= models.SET_NULL)
+	project = models.ForeignKey(Project, null=True, on_delete= models.SET_NULL)
+	
+	def __str__(self):
+		return self.webinvestor.name
 
