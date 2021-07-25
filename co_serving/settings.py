@@ -30,6 +30,8 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -40,6 +42,8 @@ INSTALLED_APPS = [
     'co_servings',
     'bootstrap4',
 ]
+
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -132,3 +136,28 @@ STATICFILES_DIRS =[
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+def pytest_configure(config):
+    from django.conf import settings
+
+    settings.configure(
+        AUTHENTICATION_BACKENDS=[
+            "tests.base.FooPasswordBackend",
+            "tests.base.StubPasswordBackend",
+        ],
+        DEBUG=True,
+        DATABASE_ENGINE="sqlite3",
+        DATABASES={
+            "default": {
+                "NAME": ":memory:",
+                "ENGINE": "django.db.backends.sqlite3",
+                "TEST_NAME": ":memory:",
+            },
+        },
+        DATABASE_NAME=":memory:",
+        TEST_DATABASE_NAME=":memory:",
+        INSTALLED_APPS=INSTALLED_APPS,
+        MIDDLEWARE_CLASSES=MIDDLEWARE_CLASSES,
+        PASSWORD_HASHERS=["django.contrib.auth.hashers.MD5PasswordHasher"],
+        ROOT_URLCONF="tests.urls",
+    ) 
