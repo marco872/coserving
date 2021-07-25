@@ -28,8 +28,15 @@
 		background-color: #7CD1C0;
 	}
 
+	th {
+
+	color : green;
+		
+	}
+
 	td {
 
 	color : red;
 		
 	}
+

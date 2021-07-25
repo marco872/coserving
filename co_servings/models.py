@@ -1,6 +1,15 @@
 from django.db import models
 
+
+
+
 # Create your models here.
+class Home(models.Model):
+	re_description = models.TextField()
+	how_description = models.TextField()
+	users_description = models.TextField()
+
+
 class Webinvestor(models.Model):
 	name = models.CharField(max_length=200, null=True)
 	phone = models.CharField(max_length=200, null=True)
@@ -58,6 +67,4 @@ class Investment(models.Model):
 	liquidity_pool = models.ForeignKey(Liquidity_Pool, null=True, on_delete= models.SET_NULL)
 	project = models.ForeignKey(Project, null=True, on_delete= models.SET_NULL)
 	
-	def __str__(self):
-		return self.webinvestor.name
 
