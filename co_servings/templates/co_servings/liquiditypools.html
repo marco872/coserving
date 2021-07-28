@@ -13,10 +13,33 @@
 				<tr>
 					
 					<th>Webinvestor's name</th>
+
+				{% for item in webinvestors %}
+
+					<tr>
+						<td>{{item.name}}</td>
+					</tr>
+
+				{% endfor %}
+					
+
+
+				<tr>
+
 					<th>Investment </th>
 				</tr>
+
+
+				{% for items in list %}
+
+					<tr>
+						<td>{{item.name}}</td>
+					</tr>
+
+				{% endfor %}
 					
 			</table>
+			
 				
 			
 		</div>

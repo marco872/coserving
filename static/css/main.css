@@ -28,15 +28,35 @@
 		background-color: #7CD1C0;
 	}
 
-	th {
+	table {
 
+		width: 100%;
+
+	}
+
+	th {
 	color : green;
-		
+	font-size: 30px;
+	padding: 25px 75px 75px 200px;
+	display: inline;
+	
+
 	}
 
 	td {
 
 	color : red;
-		
-	}
+	font-size: 30px;
+	padding: 25px 75px 75px 200px;
+	display: inline;
 
+
+	} 
+	
+	tbody {
+  	display: table-row-group;
+  	vertical-align: text-top;
+  	border-color: inherit;
+}	
+	
+	

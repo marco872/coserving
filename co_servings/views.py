@@ -15,7 +15,7 @@ def home(request):
 def liquiditypools(request):
 	liquiditypools = Liquidity_Pool.objects.all()
 	
-	return render(request, 'co_servings/liquiditypools.html', {'list': liquiditypools})
+	return render(request, 'co_servings/liquiditypools.html', {'liquidpools': liquiditypools})
 
 
 def projects(request):
@@ -25,4 +25,4 @@ def projects(request):
 
 def webinvestors(request):
 	webinvestors = Webinvestor.objects.all()
-	return render(request, 'co_servings/webinvestors.html', {'list': webinvestors})
+	return render(request, 'co_servings/webinvestors.html', {'webinvestors': webinvestors})
