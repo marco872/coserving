@@ -29,7 +29,7 @@ class Project(models.Model):
 		('Noursing room', 'Noursing room'),
 		('Food corner', 'Food corner'),
 		)
-
+	webinvestor = models.ForeignKey(Webinvestor, null=True, on_delete= models.SET_NULL)
 	property_price = models.FloatField(null=True)
 	location = models.CharField(max_length=200, null=True)
 	dimension = models.CharField(max_length=200, null=True)
@@ -68,3 +68,4 @@ class Investment(models.Model):
 	project = models.ForeignKey(Project, null=True, on_delete= models.SET_NULL)
 	
 
+	

@@ -25,4 +25,10 @@ def projects(request):
 
 def webinvestors(request):
 	webinvestors = Webinvestor.objects.all()
-	return render(request, 'co_servings/webinvestors.html', {'webinvestors': webinvestors})
+	projects = Project.objects.all()
+	investments = Investment.objects.all()
+
+
+	context = {'webinvestors': webinvestors, 'list':projects, 'name':webinvestors, 'project': investments}
+	return render(request, 'co_servings/webinvestors.html', context)
+

@@ -66,3 +66,8 @@
 		background-color: green;
 		
 	}	
+
+ 	img {
+		max-width: 10%;
+		max-height:10%;
+	}
