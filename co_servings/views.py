@@ -14,12 +14,14 @@ def home(request):
 
 def liquiditypools(request):
 	liquiditypools = Liquidity_Pool.objects.all()
+
 	
-	return render(request, 'co_servings/liquiditypools.html', {'liquidpools': liquiditypools})
+	return render(request, 'co_servings/liquiditypools.html', {'liquidity': liquiditypools})
 
 
 def projects(request):
 	projects = Project.objects.all()
+	
 	
 	return render(request, 'co_servings/projects.html', {'list': projects})
 

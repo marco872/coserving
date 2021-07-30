@@ -11,9 +11,6 @@
 	 
 	}
 
-
-
-
 	#total-pools{
 		background-color: #4cb4c7;
 	}
@@ -27,8 +24,9 @@
 		background-color: #7CD1C0;
 	}
 
-	
+	h5 {
 
- 	.table{
- 		color : blue;
- 	}
+		color: blue;
+	}
+
+	

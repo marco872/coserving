@@ -1,10 +1,11 @@
 {% extends 'co_servings/main.html' %}
+{% load static %}
 
 {% block content %}
 {% include 'co_servings/status.html' %}
 <br>
 <div class="row">
-	<div class="col-md-3">
+	<div class="col-md-4">
 		<h5>WEBINVESTORS:</h5>
 		<hr>
 		<div class="card card-body">
@@ -14,13 +15,14 @@
 					
 					<th>Webinvestor's name</th>
 
-				{% for item in webinvestors %}
+					{% for item in project %}
+						<tr>
+							<td>{{item.webinvestor}}</td>
+						</tr>
+					{% endfor %}
 
-					<tr>
-						<td>{{item.name}}</td>
-					</tr>
 
-				{% endfor %}
+					<br>
 					
 
 
@@ -45,25 +47,73 @@
 		</div>
 		
 	</div>
-	
-	<div class="col-md-9">
+
+
+	<div class="col-md-8">
 					
 		<h5>LAST 5 PRIVATE LIQUIDITY POOLS:</h5>
 		<hr>
 		<div class="card card-body">
 			<a class="btn btn primary btn-15m btn-block" href="">Create Private Pool</a>
-			<table class="table table-5m">
-				<tr>
-					<th>Total Project Value</th>
-					<th>Liquidity Pool Name</th>
-					<th>Liquidity Pool Value</th>
-					<th>Starting date</th>
-					<th>Status</th>
-					<th>Update</th>
-					<th>Remove</th>
+			
+			
+
+
+		
+
 					
-								
-			</table>
+			<div class="row">
+
+						<div class="col">
+					
+							Liquidity Pool Name:
+
+						  	<br>
+
+							{% for item in liquidity %}
+								<tr>
+									<td>{{item.name}}</td>
+								</tr>
+						
+							{% endfor %}
+
+						</div>
+
+						<div class="col">
+					
+							Liquidity Pool Value:
+							<br>
+
+							{% for item in liquidity %}
+								<tr>
+									<td>{{item.price}}</td>
+								</tr>
+
+							<br>
+							
+							{% endfor %}
+						</div>
+
+						<div class="col">
+					
+							Status:
+							<br>
+
+							{% for item in liquidity %}
+								<tr>
+									<td>{{item.status}}</td>
+								</tr>
+							<br>
+							{% endfor %}
+						</div>
+
+					</div>
+			</div>
+				
+	
+						
+					
+
 		</div>
 		   		
 	</div>
