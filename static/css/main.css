@@ -1,11 +1,7 @@
 
 
 	#logo{
-    	width: 46px;
-    	height: 46px;
-   		border-radius: 50%;
-    	overflow: hidden;
-    	margin-top: -6px;
+    	
 	}
 
 	
@@ -31,43 +27,8 @@
 		background-color: #7CD1C0;
 	}
 
-	}
-
-	th {
-	color : green;
-	font-size: 30px;
-	padding: 25px 75px 75px 200px;
-	display: inline;
 	
 
-	}
-
-	td {
-
-	color : red;
-	font-size: 30px;
-	padding: 25px 75px 75px 200px;
-	display: inline;
-
-
-	} 
-	
-	tbody {
-  	display: table-row-group;
-  	vertical-align: text-top;
-  	border-color: inherit;
-	}
-
-	.red-box {
-		background-color: red;
-	}	
-	
-	.green-box {
-		background-color: green;
-		
-	}	
-
- 	img {
-		max-width: 10%;
-		max-height:10%;
-	}
+ 	.table{
+ 		color : blue;
+ 	}
