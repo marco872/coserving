@@ -15,8 +15,22 @@
 	  	<div class="row">
 
 	  		<div class="col red-box">
-				Property:
+
+				<h5>Owner:</h5>
+				
+				{% for item in list %}
+				<tr>
+					<td>{{item.owner}}</td>
+				</tr>
 				<br>
+				{% endfor %}
+			</div>
+
+
+
+	  		<div class="col red-box">
+				<h5>Property:</h5>
+				
 				{% for item in list %}
 				<tr>
 					<td>{{item.property_price}}</td>
@@ -26,8 +40,8 @@
 			</div>
 
 			<div class="col green-box">
-			   	Location:
-			   	<br>
+			   	<h5>Location:</h5>
+			  
 			   	{% for item in list %}
 			   	<tr>
 					<td>{{item.location}}</td>
@@ -37,8 +51,8 @@
 			</div>
 
 			<div class="col red-box">
-			   	Dimension:
-			   	<br>
+			   	<h5>Dimension:</h5>
+			
 			   	{% for item in list %}
 			   	<tr>
 					<td>{{item.dimension}}</td>
@@ -49,8 +63,8 @@
 
 
 			<div class="col green-box">
-			   	Category:
-			   	<br>
+			   	<h5>Category:</h5>
+			   
 			   	{% for item in list %}
 				<tr>
 					<td>{{item.category}}</td>
@@ -60,8 +74,8 @@
 			</div>
 
 			<div class="col red-box">
-			   	Building:
-			   	<br>
+			   	<h5>Building:</h5>
+			   
 			   	{% for item in list %}
 				<tr>
 					<td>{{item.building}}</td>
@@ -71,8 +85,8 @@
 			</div>
 
 			<div class="col green-box">
-			   	Liquidity Pool:
-			   	<br>
+			   	<h5>Liquidity Pool:</h5>
+			   
 			   	{% for item in list %}
 				<tr>
 					<td>{{item.total_project_price}}</td>

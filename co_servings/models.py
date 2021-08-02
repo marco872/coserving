@@ -3,6 +3,7 @@ from django.db import models
 
 
 
+
 # Create your models here.
 class Home(models.Model):
 	re_description = models.TextField()
@@ -29,17 +30,22 @@ class Project(models.Model):
 		('Noursing room', 'Noursing room'),
 		('Food corner', 'Food corner'),
 		)
-	webinvestor = models.ForeignKey(Webinvestor, null=True, on_delete= models.SET_NULL)
+	owner = models.CharField(max_length=200, null=True)
 	property_price = models.FloatField(null=True)
 	location = models.CharField(max_length=200, null=True)
 	dimension = models.CharField(max_length=200, null=True)
 	category = models.CharField(max_length=200, null=True, choices=CATEGORY)
 	building = models.CharField(max_length=200, null=True) #building cost+design+documentation and approval
 	total_project_price = models.FloatField(null=True) #project price+building price
+	
 	date_created = models.DateTimeField(auto_now_add=True, null=True)
 
+
+	
 	def __str__(self):
 		return self.location
+
+	
 	
 	
 
