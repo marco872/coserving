@@ -8,17 +8,22 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="{% url 'home' %}">Home</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#">Projects</a>
+        <a class="nav-link" href="{% url 'how' %}">How it works</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'projects' %}">Projects</a>
+          
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Liquidity Pools</a>
+        <a class="nav-link" href="{% url 'liquiditypools' %}">Liquidity Pools</a>
       </li>
-       <li class="nav-item">
-        <a class="nav-link" href="#">Webinvestors</a>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'development' %}">Development</a>
       </li>
+      
     </ul>
   </div>
 </nav>

@@ -1,3 +1,4 @@
+
 from django.db import models
 
 
@@ -56,6 +57,7 @@ class Liquidity_Pool(models.Model):
 		('Filling-up', 'Filling-up'),
 		('Completed', 'Completed'),
 		)
+	topic = models.CharField(max_length=200, null=True)
 	name = models.CharField(max_length=200, null=True)
 	price = models.FloatField(null=True)
 	date_created = models.DateTimeField(auto_now_add=True, null=True)
@@ -74,4 +76,15 @@ class Investment(models.Model):
 	project = models.ForeignKey(Project, null=True, on_delete= models.SET_NULL)
 	
 
+class Development(models.Model):
+
+	location = models.CharField(max_length=200, null=True)
+	name = models.CharField(max_length=200, null=True)
 	
+
+
+	
+	
+	
+
+

@@ -3,53 +3,36 @@
 
 {% block content %}
 {% include 'co_servings/status.html' %}
+
+
+<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="home.html">Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="how.html">How it works</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="projects.html">Projects</a>
+          
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="liquididypools.html">Liquidity Pools</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="development.html">Development</a>
+      </li>
+      
+    </ul>
+  </div>
+
+
 <br>
 <div class="row">
-	<div class="col-md-4">
-		<h5>WEBINVESTORS:</h5>
-		<hr>
-		<div class="card card-body">
-			<a class="btn btn primary btn-5m btn-block" href="">Become Webinvestor</a>
-			<table class="table table-5m">
-				<tr>
-					
-					<th>Webinvestor's name</th>
+	
 
-					{% for item in project %}
-						<tr>
-							<td>{{item.webinvestor}}</td>
-						</tr>
-					{% endfor %}
-
-
-					<br>
-					
-
-
-				<tr>
-
-					<th>Investment </th>
-				</tr>
-
-
-				{% for items in list %}
-
-					<tr>
-						<td>{{item.name}}</td>
-					</tr>
-
-				{% endfor %}
-					
-			</table>
-			
-				
-			
-		</div>
-		
-	</div>
-
-
-	<div class="col-md-8">
+	<div class="col-md-12">
 					
 		<h5>LAST 5 PRIVATE LIQUIDITY POOLS:</h5>
 		<hr>
@@ -66,6 +49,24 @@
 
 						<div class="col">
 					
+							Type:
+
+						  	<br>
+
+							{% for item in liquidity %}
+								<tr>
+									<td>{{item.topic}}</td>
+								</tr>
+							<br>
+							{% endfor %}
+
+
+						</div>
+
+
+
+						<div class="col">
+					
 							Liquidity Pool Name:
 
 						  	<br>
@@ -74,6 +75,7 @@
 								<tr>
 									<td>{{item.name}}</td>
 								</tr>
+							<br>
 						
 							{% endfor %}
 

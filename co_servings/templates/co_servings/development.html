@@ -1,9 +1,8 @@
-
 {% extends 'co_servings/main.html' %}
 
 {% block content %}
 	{% load static %}
-
+	
 <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
@@ -25,10 +24,10 @@
       
     </ul>
   </div>
-	
+
 
 		
-<h5>PROJECTS:</h5>
+<h5>DEVELOPMENT:</h5>
 
 			
 			
@@ -40,34 +39,7 @@
 
 	  		<div class="col">
 
-				<h5 style="color:blue;">Owner:</h5>
 				
-				{% for item in list %}
-				<tr>
-					<td>{{item.owner}}</td>
-				</tr>
-				<br>
-				<br>
-				<br>
-				{% endfor %}
-			</div>
-
-
-
-	  		<div class="col">
-				<h5>Property:</h5>
-				
-				{% for item in list %}
-				<tr>
-					<td>{{item.property_price}}</td>
-				</tr>
-				<br>
-				<br>
-				<br>
-				{% endfor %}
-			</div>
-
-			<div class="col">
 			   	<h5 style="color:red;">Location:</h5>
 			  
 			   	{% for item in list %}
@@ -80,18 +52,7 @@
 				{% endfor %}
 			</div>
 
-			<div class="col">
-			   	<h5>Dimension:</h5>
 			
-			   	{% for item in list %}
-			   	<tr>
-					<td>{{item.dimension}}</td>
-				</tr>
-				<br>
-				<br>
-				<br>
-				{% endfor %}
-			</div>
 
 
 			<div class="col">
@@ -107,18 +68,7 @@
 				{% endfor %}
 			</div>
 
-			<div class="col">
-			   	<h5>Building:</h5>
-			   
-			   	{% for item in list %}
-				<tr>
-					<td>{{item.building}}</td>
-				</tr>
-				<br>
-				<br>
-				<br>
-				{% endfor %}
-			</div>
+			
 
 			<div class="col">
 			   	<h5 style="color:red;">Liquidpool:</h5>
@@ -139,11 +89,7 @@
 
 			   	<img src="{% static 'images/plot1.PNG' %}">
 			   	<br>
-			   	<br>
-			   <img src="{% static 'images/plot1.PNG' %}">
-			    <br>
-			   	<br>
-			   <img src="{% static 'images/plot1.PNG' %}">
+			   
 			   	
 			</div>
 
@@ -152,11 +98,7 @@
 
 			  	<img src="{% static 'images/building.PNG' %}"> 
 			  	<br>
-			  	<br>
-			    <img src="{% static 'images/building.PNG' %}">
-			    <br>
-			   	<br>
-			  	<img src="{% static 'images/building.PNG' %}">
+			  	
 			   	
 			</div>
 
@@ -165,11 +107,7 @@
 
 			   <img src="{% static 'images/housing.PNG' %}">
 			   <br> 
-			   <br>
-	 		   <img src="{% static 'images/housing.PNG' %}"> 
-	 		   <br> 
-			   <br>
-	 		   <img src="{% static 'images/housing.PNG' %}"> 
+			  
 			   	
 			</div>
 

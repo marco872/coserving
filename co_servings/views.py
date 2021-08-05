@@ -1,3 +1,6 @@
+
+
+
 from django.shortcuts import render
 from django.http import HttpResponse
 
@@ -11,6 +14,8 @@ from .models import *
 def home(request):
 	return render(request, 'co_servings/home.html')
 
+def how(request):
+	return render(request, 'co_servings/how.html')
 
 def liquiditypools(request):
 	liquiditypools = Liquidity_Pool.objects.all()
@@ -34,3 +39,7 @@ def webinvestors(request):
 	context = {'webinvestors': webinvestors, 'list':projects, 'name':webinvestors, 'project': investments}
 	return render(request, 'co_servings/webinvestors.html', context)
 
+def development(request):
+	
+	
+	return render(request, 'co_servings/development.html')
