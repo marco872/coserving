@@ -14,8 +14,13 @@ from .models import *
 def home(request):
 	return render(request, 'co_servings/home.html')
 
+
 def how(request):
 	return render(request, 'co_servings/how.html')
+
+def white(request):
+	return render(request, 'co_servings/white.html')
+
 
 def liquiditypools(request):
 	liquiditypools = Liquidity_Pool.objects.all()
