@@ -1,0 +1,114 @@
+{% extends 'co_servings/main.html' %}
+
+{% block content %}
+	{% load static %}
+
+
+
+		
+<h5>DEVELOPMENT:</h5>
+
+			
+			
+
+	<div class="container">
+	
+
+	  	<div class="row">
+
+	  		<div class="col">
+
+				
+			   	<h5 style="color:red;">Location:</h5>
+			  
+			   	{% for item in list %}
+			   	<tr>
+					<td>{{item.location}}</td>
+				</tr>
+				<br>
+				<br>
+				<br>
+				{% endfor %}
+			</div>
+
+			
+
+
+			<div class="col">
+			   	<h5>Category:</h5>
+			   
+			   	{% for item in list %}
+				<tr>
+					<td>{{item.category}}</td>
+				</tr>
+				<br>
+				<br>
+				<br>
+				{% endfor %}
+			</div>
+
+			
+
+			<div class="col">
+			   	<h5 style="color:red;">Liquidpool:</h5>
+			   
+			   	{% for item in list %}
+				<tr>
+					<td>{{item.total_project_price}}</td>
+				</tr>
+				<br>
+				<br>
+				<br>
+				{% endfor %}
+			</div>
+
+
+			<div class="col">
+			   	<h5>Property:</h5>
+
+			   	<img src="{% static 'images/plot1.PNG' %}">
+			   	<br>
+			   
+			   	
+			</div>
+
+			<div class="col">
+			   	<h5>Unit:</h5>
+
+			  	<img src="{% static 'images/building.PNG' %}"> 
+			  	<br>
+			  	
+			   	
+			</div>
+
+			<div class="col">
+			   	<h5>Project:</h5>
+
+			   <img src="{% static 'images/housing.PNG' %}">
+			   <br> 
+			  
+			   	
+			</div>
+
+
+	   	</div>
+
+	</div>
+
+
+	<br />
+	<br />
+
+
+	 <br />
+	 <br />
+	 <br />
+
+	 		
+	  	
+
+
+
+
+
+{% endblock content %}

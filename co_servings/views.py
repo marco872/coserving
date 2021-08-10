@@ -46,5 +46,7 @@ def webinvestors(request):
 
 def development(request):
 	
-	
 	return render(request, 'co_servings/development.html')
+
+def rental(request):
+	return render(request, 'co_servings/rental.html')
