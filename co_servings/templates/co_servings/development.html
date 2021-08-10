@@ -6,7 +6,8 @@
 
 
 		
-<h5>DEVELOPMENT:</h5>
+<h5 style="color:orange;">PROJECT NAME:</h5>
+
 
 			
 			
@@ -50,7 +51,7 @@
 			
 
 			<div class="col">
-			   	<h5 style="color:red;">Liquidpool:</h5>
+			   	<h5 style="color:red;">pLP.name:</h5>
 			   
 			   	{% for item in list %}
 				<tr>
@@ -62,6 +63,7 @@
 				{% endfor %}
 			</div>
 
+			
 
 			<div class="col">
 			   	<h5>Property:</h5>
@@ -90,6 +92,19 @@
 			   	
 			</div>
 
+			<div class="col">
+			   	<h5 style="color:green;">PROJ.COST:</h5>
+			   
+			   	{% for item in list %}
+				<tr>
+					<td>{{item.total_project_price}}</td>
+				</tr>
+				<br>
+				<br>
+				<br>
+				{% endfor %}
+			</div>
+
 
 	   	</div>
 
@@ -104,9 +119,121 @@
 	 <br />
 	 <br />
 
-	 		
+<h5 style="color:blue;">BUILDING:</h5>	 		
 	  	
 
+<div class="container">
+	
+
+	  	<div class="row">
+
+	  		<div class="col">
+
+				
+			   	<h5 style="color:blue;">Type:</h5>
+			  
+			   	{% for item in list %}
+			   	<tr>
+					<td>{{item.}}</td>
+				</tr>
+				<br>
+				<br>
+				<br>
+				{% endfor %}
+			</div>
+
+			
+
+
+			<div class="col">
+			   	<h5 style="color:blue;">Dimension:</h5>
+			   
+			   	{% for item in list %}
+				<tr>
+					<td>{{item.}}</td>
+				</tr>
+				<br>
+				<br>
+				<br>
+				{% endfor %}
+			</div>
+
+			
+
+			<div class="col">
+			   	<h5 style="color:blue;">Typ.s apt:</h5>
+			   
+			   	<p>A=70 * u = x</p>
+			   	<p>B=80 * u = x</p>
+			   	<p>C=90 * u = x</p>
+			   	<p>D=100 * u = x</p>
+				<br>
+				<br>
+				<br>
+				
+			</div>
+
+			
+
+			<div class="col">
+			   	<h5 style="color:blue;">Typ.s flex:</h5>
+			   
+			   	<p>A1=30 * u = y</p>
+			   	<p>B1=30 * u = y</p>
+			   	<p>C1=30 * u = y</p>
+			   	<p>D1=30 * u = y</p>
+				<br>
+				<br>
+
+			  
+			   	<br>
+			   
+			   	
+			</div>
+
+			<div class="col">
+			   	<h5 style="color:blue;">Typ.s open:</h5>
+			   
+			   	<p>A2=5 * f * u = z</p>
+			   
+				<br>
+			  	
+			   	
+			</div>
+
+			<div class="col">
+			   <h5 style="color:blue;">Total Units</h5>
+			   
+			   	<p>Tx= X</p>
+			   	<p>Ty= Y</p>
+			   	<p>Tz= Z</p>
+			</div>
+
+			<div class="col">
+			   	<h5 style="color:green;">Total s.m:</h5>
+			   	<p>Tx= Xsm</p>
+			   	<p>Ty= Ysm</p>
+			   	<p>Tz= Zsm</p>
+			   	
+				<br>
+				<br>
+				<br>
+				
+			</div>
+
+
+	   	</div>
+
+	</div>
+
+
+	<br />
+	<br />
+
+
+	 <br />
+	 <br />
+	 <br />
 
 
 
