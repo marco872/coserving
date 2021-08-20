@@ -1,12 +1,17 @@
 
 
 
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import render 
+from django.http import HttpResponseRedirect
 
 from .models import *
 
+from .forms import VenueForm
+
 # Create your views here.
+
+
+
 
 
 
@@ -28,6 +33,24 @@ def liquiditypools(request):
 	
 	return render(request, 'co_servings/liquiditypools.html', {'liquidity': liquiditypools})
 
+def venue(request):
+	submitted = False
+	form = VenueForm()
+	if request.method == "POST":
+		form = VenueForm(request.POST)
+		if form.is_valid():
+			form.save()
+			return HttpResponseRedirect('/venue?submitted=True')
+
+	else:
+		form = VenueForm()
+		if 'submitted' in request.GET:
+			submitted = True
+
+		return render(request, 'co_servings/venue.html', {'form':form, 'submitted':submitted })
+
+	
+		
 
 def projects(request):
 	projects = Project.objects.all()

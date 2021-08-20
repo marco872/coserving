@@ -86,5 +86,27 @@ class Development(models.Model):
 	
 	
 	
+class Venue(models.Model):
+
+	CATEGORY = (
+		('Guestroom', 'Guestroom'),
+		('Display area', 'Dispaly area'),
+		('Working station', 'Working station'),
+		('Office', 'Office'),
+		('Noursing room', 'Noursing room'),
+		('Food corner', 'Food corner'),
+		)
+	owner = models.CharField(max_length=200, blank=True, null=True)
+	property_price = models.CharField(max_length=200, blank=True, null=True)
+	location = models.CharField(max_length=200, blank=True, null=True)
+	name = models.CharField(max_length=200,blank=True, null=True)
+	category = models.CharField(max_length=200, blank=True, null=True, choices=CATEGORY)
+	building = models.CharField(max_length=200, blank=True, null=True) #building cost+design+documentation and approval
+	total_project_price = models.CharField(max_length=200, blank=True, null=True) #project price+building price
+	
+	date_created = models.DateTimeField(auto_now_add=True, blank=True, null=True)
 
 
+	
+	def __str__(self):
+		return self.location
