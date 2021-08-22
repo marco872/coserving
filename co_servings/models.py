@@ -49,7 +49,7 @@ class Project(models.Model):
 	
 	
 	
-
+#NOT IN USE
 class Liquidity_Pool(models.Model):
 
 	STATUS = (
@@ -62,6 +62,7 @@ class Liquidity_Pool(models.Model):
 	price = models.FloatField(null=True)
 	date_created = models.DateTimeField(auto_now_add=True, null=True)
 	status = models.CharField(max_length=200, null=True, choices=STATUS)
+	smart_contracts = models.TextField( blank=True, null=True)
 
 	def __str__(self):
 		return self.name
@@ -100,7 +101,7 @@ class Venue(models.Model):
 	property_price = models.CharField(max_length=200, blank=True, null=True)
 	location = models.CharField(max_length=200, blank=True, null=True)
 	name = models.CharField(max_length=200,blank=True, null=True)
-	category = models.CharField(max_length=200, blank=True, null=True, choices=CATEGORY)
+	category = models.CharField(max_length=200, null=True, choices=CATEGORY)
 	building = models.CharField(max_length=200, blank=True, null=True) #building cost+design+documentation and approval
 	total_project_price = models.CharField(max_length=200, blank=True, null=True) #project price+building price
 	
@@ -110,3 +111,20 @@ class Venue(models.Model):
 	
 	def __str__(self):
 		return self.location
+
+
+class Liquidity(models.Model):
+
+	STATUS = (
+		('Starting', 'Starting'),
+		('Filling_up', 'Filling_up'),
+		('Completed', 'Completed'),
+		)
+	topic = models.CharField(max_length=200, blank=True, null=True)
+	name = models.CharField(max_length=200,  blank=True, null=True)
+	price = models.CharField(max_length=200,  blank=True, null=True)
+	status = models.CharField(max_length=200,  null=True, choices=STATUS)
+	smart_contracts = models.TextField( blank=True, null=True)
+	
+	def __str__(self):
+		return self.name

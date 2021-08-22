@@ -23,13 +23,34 @@
 				<h5 style="color:blue;">Owner:</h5>
 				
 				{% for item in list %}
-				<tr>
-					<td>{{item.owner}}</td>
-				</tr>
-				<br>
-				<br>
-				<br>
+			
+				
+					<tr>
+						<td>{{item.owner}}</td>
+						
+					</tr>
+					<br>
+					<br>
+					<br>
+					
 				{% endfor %}
+
+			
+
+				
+				
+					{% for i in value %} 
+				
+					<tr>
+						
+						<td>{{i.owner}}</td>
+					</tr>
+					<br>
+					<br>
+					<br>
+					{% endfor %}
+				
+
 			</div>
 
 
@@ -45,7 +66,21 @@
 				<br>
 				<br>
 				{% endfor %}
+
+			{% for i in value %} 
+				
+					<tr>
+						
+						<td>{{i.property_price}}</td>
+					</tr>
+					<br>
+					<br>
+					<br>
+					{% endfor %}
+				
+
 			</div>
+		
 
 			<div class="col">
 			   	<h5 style="color:red;">Location:</h5>
@@ -58,7 +93,21 @@
 				<br>
 				<br>
 				{% endfor %}
+
+				{% for i in value %} 
+				
+					<tr>
+						
+						<td>{{i.location}}</td>
+					</tr>
+					<br>
+					<br>
+					<br>
+					{% endfor %}
+				
+
 			</div>
+			
 
 			<div class="col">
 			   	<h5 style="color:orange;">Name:</h5>
@@ -71,6 +120,19 @@
 				<br>
 				<br>
 				{% endfor %}
+
+				{% for i in value %} 
+				
+					<tr>
+						
+						<td>{{i.name}}</td>
+					</tr>
+					<br>
+					<br>
+					<br>
+					{% endfor %}
+				
+
 			</div>
 
 
@@ -85,7 +147,21 @@
 				<br>
 				<br>
 				{% endfor %}
+
+				{% for i in value %} 
+				
+					<tr>
+						
+						<td>{{i.category}}</td>
+					</tr>
+					<br>
+					<br>
+					<br>
+					{% endfor %}
+				
+
 			</div>
+			
 
 			<div class="col">
 			   	<h5 style="color:blue;">Building:</h5>
@@ -98,7 +174,21 @@
 				<br>
 				<br>
 				{% endfor %}
+
+				{% for i in value %} 
+				
+					<tr>
+						
+						<td>{{i.building}}</td>
+					</tr>
+					<br>
+					<br>
+					<br>
+					{% endfor %}
+				
+
 			</div>
+			
 
 			<div class="col">
 			   	<h5 style="color:green;">PROJ.cost:</h5>
@@ -111,6 +201,19 @@
 				<br>
 				<br>
 				{% endfor %}
+				
+				{% for i in value %} 
+				
+					<tr>
+						
+						<td>{{i.total_project_price}}</td>
+					</tr>
+					<br>
+					<br>
+					<br>
+					{% endfor %}
+				
+
 			</div>
 
 

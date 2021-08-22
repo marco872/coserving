@@ -30,73 +30,84 @@
 						<div class="col">
 					
 							Type:
+							<br>
 
-						  	<br>
-
-							{% for item in liquidity %}
+							{% for i in topic %}
 								<tr>
-									<td>{{item.topic}}</td>
+									<td>{{i.topic}}</td>
 								</tr>
+							<br>	
 							<br>
 							{% endfor %}
-
-
-						</div>
+							<br/>
+							<br/>
+						</div>		 
 
 
 
 						<div class="col">
 					
 							Liquidity Pool Name:
-
-						  	<br>
-
-							{% for item in liquidity %}
-								<tr>
-									<td>{{item.name}}</td>
-								</tr>
 							<br>
-						
+
+							{% for i in topic %}
+								<tr>
+									<td>{{i.name}}</td>
+								</tr>
+							<br>	
+							<br>
 							{% endfor %}
+							<br/>
+							<br/>
 
 						</div>
 
 						<div class="col">
 					
 							Liquidity Pool Value:
-							<br>
-
-							{% for item in liquidity %}
-								<tr>
-									<td>{{item.price}}</td>
-								</tr>
-
-							<br>
 							
+							<br>
+							{% for i in topic %}
+								<tr>
+									<td>{{i.price}}</td>
+								</tr>
+							<br>	
+							<br>
 							{% endfor %}
+							<br/>
+							<br/>
 						</div>
 
 						<div class="col">
 					
 							Status:
-							<br>
-
-							{% for item in liquidity %}
+							<br/>
+							{% for i in topic %}
 								<tr>
-									<td>{{item.status}}</td>
+									<td>{{i.status}}</td>
 								</tr>
+							<br>	
 							<br>
 							{% endfor %}
+							<br/>
+							<br/>
 						</div>
 
 						<div class="col">
 					
 							SMART CONTRACTS:
-							<p>Between:</p>
-							<p>Liquidity pools jurical status</p>
-							<p>Liquidity pools and Authority to transfer funds</p>
-							<p>Tenants and Liquidity pools</p>
-							<p>Guests and Liquidity pools</p>
+							
+							<br>
+							{% for i in topic %}
+								<tr>
+									<td>{{i.smart_contracts}}</td>
+								</tr>
+						
+							<br/>
+							<br>
+							{% endfor %}
+							<br/>
+							<br/>
 						</div>
 
 
