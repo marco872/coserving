@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'co_servings',
     'bootstrap4',
+    'members',
 ]
 
 

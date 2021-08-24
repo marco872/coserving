@@ -93,7 +93,12 @@ def webinvestors(request):
 	return render(request, 'co_servings/webinvestors.html', context)
 
 def development(request):
-	
+	projects = Project.objects.all()
+	venue = Venue.objects.all()
+	liquidity = Liquidity.objects.all()
+
+	context = {'list': projects, 'value': venue, 'topic': liquidity}
+	return render(request, 'co_servings/development.html',context )
 	
 	return render(request, 'co_servings/development.html')
 

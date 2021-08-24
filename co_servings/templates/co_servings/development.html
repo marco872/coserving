@@ -22,9 +22,9 @@
 				
 			   	<h5 style="color:red;">Location:</h5>
 			  
-			   	{% for item in list %}
+			   	{% for i in value %}
 			   	<tr>
-					<td>{{item.location}}</td>
+					<td>{{i.location}}</td>
 				</tr>
 				<br>
 				<br>
@@ -38,9 +38,9 @@
 			<div class="col">
 			   	<h5>Category:</h5>
 			   
-			   	{% for item in list %}
+			   	{% for i in value %}
 				<tr>
-					<td>{{item.category}}</td>
+					<td>{{i.category}}</td>
 				</tr>
 				<br>
 				<br>
@@ -51,16 +51,19 @@
 			
 
 			<div class="col">
-			   	<h5 style="color:red;">pLP.name:</h5>
+			   	<h5 style="color:red;">pLP if func:</h5>
 			   
-			   	{% for item in list %}
+			   	{% for i in topic %} 
+
 				<tr>
-					<td>{{item.total_project_price}}</td>
+					<td>{{i.name}}</td>
 				</tr>
 				<br>
 				<br>
 				<br>
+
 				{% endfor %}
+
 			</div>
 
 			
@@ -95,9 +98,9 @@
 			<div class="col">
 			   	<h5 style="color:green;">PROJ.COST:</h5>
 			   
-			   	{% for item in list %}
+			   	{% for i in value %}
 				<tr>
-					<td>{{item.total_project_price}}</td>
+					<td>{{i.total_project_price}}</td>
 				</tr>
 				<br>
 				<br>

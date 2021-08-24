@@ -80,7 +80,12 @@ class Investment(models.Model):
 class Development(models.Model):
 
 	location = models.CharField(max_length=200, null=True)
-
+	category = models.CharField(max_length=200, null=True)
+	plp = models.CharField(max_length=200, null=True)
+	proper = models.CharField(max_length=200, null=True)
+	unit = models.CharField(max_length=200, null=True)
+	project = models.CharField(max_length=200, null=True)
+	projcost = models.CharField(max_length=200, null=True)
 	def __str__(self):
 		return self.location
 
