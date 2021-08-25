@@ -10,36 +10,56 @@
       <li class="nav-item active">
         <a class="nav-link" href="{% url 'home' %}">Home</a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="{% url 'white' %}">White Paper</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="{% url 'how' %}">How LPs work</a>
-      </li>
-       <li class="nav-item active">
-        <a class="nav-link" href="{% url 'venue' %}">Add-Projects</a>
+
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{% url 'white' %}">White Paper</a>
+          <a class="dropdown-item" href="{% url 'how' %}">How LPs work</a>
           
+        </div>
       </li>
+
+
+     
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+          Downloads
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{% url 'venue' %}">Add-Projects</a>
+          <a class="dropdown-item" href="{% url 'liquidity' %}">Add-Liquidity</a>
+          
+        </div>
+      </li> 
+
+
+
+     
       <li class="nav-item active">
         <a class="nav-link" href="{% url 'projects' %}">Projects</a>
       </li>
 
       <li class="nav-item active">
-        <a class="nav-link" href="{% url 'liquidity' %}">Add-Liquidity</a>
-          
-      </li>
-      
-      
-   
-      <li class="nav-item active">
         <a class="nav-link" href="{% url 'liquiditypools' %}">Liquidity Pools</a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="{% url 'development' %}">Development</a>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+          Activities
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{% url 'development' %}">Development</a>
+          <a class="dropdown-item" href="{% url 'rental' %}">RENTAL</a>
+        </div>
       </li>
-       <li class="nav-item active">
-        <a class="nav-link" href="{% url 'rental' %}">RENTAL</a>
-      </li>
+
+     
+      
       {% if user.is_authenticated %}
       <li class="nav-item active">
         <a class="nav-link" href="{% url 'logout' %}">Logout</a>
