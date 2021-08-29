@@ -136,7 +136,7 @@ USE_TZ = True
 
 #STATIC_URL = '/static/'
 
-static_root = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = "/static/"
 
 django_
