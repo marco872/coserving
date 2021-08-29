@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
+import django_heroku
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,7 +26,7 @@ SECRET_KEY = 'django-insecure-5zkw4y=&($e+*+n_^ca_@azoxda_#-n4%ruvg(f$$80ntfv*6x
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['co-serving.herokuapp.com']
 
 
 # Application definition
@@ -85,11 +86,12 @@ DATABASES = {
         #'ENGINE': 'django.db.backends.sqlite3',
         #'NAME': str(os.path.join(BASE_DIR / 'db.sqlite3')),
        'default': {
+
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'coserving', 
-        'USER': 'postgres',
-        'PASSWORD': 'Mandorladespina1',
-        'HOST': 'localhost',
+        'NAME': 'dfekreriji4815', 
+        'USER': 'ctbzayexvsiefx',
+        'PASSWORD': '3da3f4291608a48dd8c6d19d755ef6642efbee369e4b8cc9db84fe4aec6d5cb6',
+        'HOST': 'ec2-184-73-198-174.compute-1.amazonaws.com',
         'PORT': '5432',
 
     }
@@ -132,13 +134,22 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/static/'
+#STATIC_URL = '/static/'
+
+static_root = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = "/static/"
+
+django_
 
 
 MEDIA_URL = '/images/'
 
 STATICFILES_DIRS =[
     os.path.join(BASE_DIR, 'static'),
+
+django_heroku.settings(locals())
+
+
     
 ]
 
@@ -146,13 +157,3 @@ STATICFILES_DIRS =[
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-import django_heroku
-django_heroku.settings(locals())
-if os.environ.get('DEBUG') == 'TRUE':
-    DEBUG = TRUE
-
-elif os.environ.get('DEBUG') == 'FALSE':
-    DEBUG = FALSE
-
-
