@@ -25,10 +25,10 @@ class Webinvestor(models.Model):
 class Project(models.Model):
 	CATEGORY = (
 		('Guestroom', 'Guestroom'),
-		('Display area', 'Dispaly area'),
+		('Display area', 'Display area'),
 		('Working station', 'Working station'),
 		('Office', 'Office'),
-		('Noursing room', 'Noursing room'),
+		('Noursing room', 'Nursing room'),
 		('Food corner', 'Food corner'),
 		)
 	owner = models.CharField(max_length=200, null=True)
@@ -96,10 +96,10 @@ class Venue(models.Model):
 
 	CATEGORY = (
 		('Guestroom', 'Guestroom'),
-		('Display area', 'Dispaly area'),
+		('Display area', 'Display area'),
 		('Working station', 'Working station'),
 		('Office', 'Office'),
-		('Noursing room', 'Noursing room'),
+		('Noursing room', 'Nursing room'),
 		('Food corner', 'Food corner'),
 		)
 	owner = models.CharField(max_length=200, blank=True, null=True)
