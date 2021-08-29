@@ -85,6 +85,7 @@ DATABASES = {
     #'default': {
         #'ENGINE': 'django.db.backends.sqlite3',
         #'NAME': str(os.path.join(BASE_DIR / 'db.sqlite3')),
+
        'default': {
 
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -138,7 +139,7 @@ USE_TZ = True
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = "/static/"
-
+django_heroku.settings(locals())
 
 
 
@@ -147,10 +148,6 @@ MEDIA_URL = '/images/'
 STATICFILES_DIRS =[
     os.path.join(BASE_DIR, 'static'),
 
-django_heroku.settings(locals())
-
-
-    
 ]
 
 # Default primary key field type
