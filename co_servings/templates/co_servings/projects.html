@@ -14,13 +14,14 @@
 			
 
 	<div class="container">
-	
+	<hr>
 
 	  	<div class="row">
 
 	  		<div class="col">
 
 				<h5 style="color:blue;">Owner:</h5>
+				<br>
 				
 				{% for item in list %}
 			
@@ -30,8 +31,10 @@
 						
 					</tr>
 					<br>
-					<br>
-					<br>
+					
+					<hr>
+					
+
 					
 				{% endfor %}
 
@@ -45,9 +48,10 @@
 						
 						<td>{{i.owner}}</td>
 					</tr>
+				
 					<br>
-					<br>
-					<br>
+					<hr>
+				
 					{% endfor %}
 				
 
@@ -57,14 +61,16 @@
 
 	  		<div class="col">
 				<h5>Property:</h5>
+				<br>
 				
 				{% for item in list %}
 				<tr>
 					<td>{{item.property_price}}</td>
 				</tr>
+			
 				<br>
-				<br>
-				<br>
+				<hr>
+				
 				{% endfor %}
 
 			{% for i in value %} 
@@ -73,9 +79,10 @@
 						
 						<td>{{i.property_price}}</td>
 					</tr>
+				
 					<br>
-					<br>
-					<br>
+					<hr>
+					
 					{% endfor %}
 				
 
@@ -84,14 +91,16 @@
 
 			<div class="col">
 			   	<h5 style="color:red;">Location:</h5>
+			   	<br>
 			  
 			   	{% for item in list %}
 			   	<tr>
 					<td>{{item.location}}</td>
 				</tr>
+				
 				<br>
-				<br>
-				<br>
+				<hr>
+				
 				{% endfor %}
 
 				{% for i in value %} 
@@ -100,9 +109,10 @@
 						
 						<td>{{i.location}}</td>
 					</tr>
+					
 					<br>
-					<br>
-					<br>
+					<hr>
+					
 					{% endfor %}
 				
 
@@ -111,14 +121,16 @@
 
 			<div class="col">
 			   	<h5 style="color:orange;">Name:</h5>
+			   	<br>
 			
 			   	{% for item in list %}
 			   	<tr>
 					<td>{{item.name}}</td>
 				</tr>
+			
 				<br>
-				<br>
-				<br>
+				<hr>
+				
 				{% endfor %}
 
 				{% for i in value %} 
@@ -127,9 +139,10 @@
 						
 						<td>{{i.name}}</td>
 					</tr>
+					
 					<br>
-					<br>
-					<br>
+					<hr>
+					
 					{% endfor %}
 				
 
@@ -138,14 +151,16 @@
 
 			<div class="col">
 			   	<h5>Category:</h5>
+			   	<br>
 			   
 			   	{% for item in list %}
 				<tr>
 					<td>{{item.category}}</td>
 				</tr>
+				
 				<br>
-				<br>
-				<br>
+				<hr>
+				
 				{% endfor %}
 
 				{% for i in value %} 
@@ -154,9 +169,10 @@
 						
 						<td>{{i.category}}</td>
 					</tr>
+				
 					<br>
-					<br>
-					<br>
+					<hr>
+					
 					{% endfor %}
 				
 
@@ -165,14 +181,16 @@
 
 			<div class="col">
 			   	<h5 style="color:blue;">Building:</h5>
+			   	<br>
 			   
 			   	{% for item in list %}
 				<tr>
 					<td>{{item.building}}</td>
 				</tr>
+				
 				<br>
-				<br>
-				<br>
+				<hr>
+				
 				{% endfor %}
 
 				{% for i in value %} 
@@ -181,9 +199,10 @@
 						
 						<td>{{i.building}}</td>
 					</tr>
+					
 					<br>
-					<br>
-					<br>
+					<hr>
+					
 					{% endfor %}
 				
 
@@ -192,14 +211,15 @@
 
 			<div class="col">
 			   	<h5 style="color:green;">PROJ.cost:</h5>
-			   
+			   	<br>
 			   	{% for item in list %}
 				<tr>
 					<td>{{item.total_project_price}}</td>
 				</tr>
+				
 				<br>
-				<br>
-				<br>
+				<hr>
+				
 				{% endfor %}
 				
 				{% for i in value %} 
@@ -208,9 +228,10 @@
 						
 						<td>{{i.total_project_price}}</td>
 					</tr>
+					
 					<br>
-					<br>
-					<br>
+					<hr>
+					
 					{% endfor %}
 				
 
@@ -222,12 +243,14 @@
 
 			   	<img src="{% static 'images/plot1.PNG' %}">
 			   	<br>
-			   	<br>
+			  	<br>
 			   <img src="{% static 'images/plot1.PNG' %}">
 			    <br>
-			   	<br>
+			    <br>
+			   
 			   <img src="{% static 'images/plot1.PNG' %}">
-			   	
+			   <br>
+			   <br>	
 			</div>
 
 			<div class="col">
@@ -236,11 +259,13 @@
 			  	<img src="{% static 'images/building.PNG' %}"> 
 			  	<br>
 			  	<br>
+			
 			    <img src="{% static 'images/building.PNG' %}">
 			    <br>
 			   	<br>
 			  	<img src="{% static 'images/building.PNG' %}">
-			   	
+			   	<br>
+			   	<br>
 			</div>
 
 			<div class="col">
@@ -253,12 +278,13 @@
 	 		   <br> 
 			   <br>
 	 		   <img src="{% static 'images/housing.PNG' %}"> 
-			   	
+			   <br>
+			   <br>
 			</div>
 
 
 	   	</div>
-
+	<hr>
 	</div>
 
 
