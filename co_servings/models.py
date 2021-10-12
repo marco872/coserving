@@ -135,4 +135,8 @@ class Liquidity(models.Model):
 		return self.name
 
 class Building(models.Model):
-		pass
+	name = models.CharField(max_length=200, blank=True, null=True)
+	fbm6 = models. ImageField(blank=True, null=True,upload_to='images/')
+	
+	def __str__(self):
+		return self.name	

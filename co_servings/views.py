@@ -83,14 +83,6 @@ def liquidity(request):
 
 
 
-def webinvestors(request):
-	webinvestors = Webinvestor.objects.all()
-	projects = Project.objects.all()
-	investments = Investment.objects.all()
-
-
-	context = {'webinvestors': webinvestors, 'list':projects, 'name':webinvestors, 'project': investments}
-	return render(request, 'co_servings/webinvestors.html', context)
 
 def development(request):
 	projects = Project.objects.all()
@@ -100,8 +92,10 @@ def development(request):
 	context = {'list': projects, 'value': venue, 'topic': liquidity}
 	return render(request, 'co_servings/development.html',context )
 	
-	return render(request, 'co_servings/development.html')
+	
 
 def rental(request):
 	return render(request, 'co_servings/rental.html')
 
+def buildings(request):
+	return render(request, 'co_servings/buildings.html')
