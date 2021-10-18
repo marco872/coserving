@@ -99,3 +99,6 @@ def rental(request):
 
 def buildings(request):
 	return render(request, 'co_servings/buildings.html')
+
+def plan(request):
+	return render(request, 'co_servings/plan.html')

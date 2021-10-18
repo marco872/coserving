@@ -140,3 +140,10 @@ class Building(models.Model):
 	
 	def __str__(self):
 		return self.name	
+
+class Plan(models.Model):
+	name = models.CharField(max_length=200, blank=True, null=True)
+	
+	
+	def __str__(self):
+		return self.name	
