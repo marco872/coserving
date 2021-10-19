@@ -102,3 +102,6 @@ def buildings(request):
 
 def plan(request):
 	return render(request, 'co_servings/plan.html')
+
+def stand(request):
+	return render(request, 'co_servings/stand.html')
