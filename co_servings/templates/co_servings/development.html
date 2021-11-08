@@ -1,0 +1,299 @@
+{% extends 'co_servings/main.html' %}
+
+{% block content %}
+	{% load static %}
+
+
+
+		
+<h5 style="color:orange;">PROJECT NAME:</h5>
+
+<br>
+
+
+			
+			
+
+	<div class="container">
+	<hr>
+
+	  	<div class="row">
+
+	  		<div class="col">
+
+				
+			   	<h5 style="color:red;">Location:</h5>
+			   	<br>
+			  
+			   	{% for i in value %}
+			   	<tr>
+					<td>{{i.location}}</td>
+				</tr>
+				<br>
+				<br>
+				<hr>
+				{% endfor %}
+			</div>
+
+			
+
+
+			<div class="col">
+			   	<h5>Category:</h5>
+			   	<br>
+			   
+			   	{% for i in value %}
+				<tr>
+					<td>{{i.category}}</td>
+				</tr>
+				<br>
+				<br>
+				<hr>
+				{% endfor %}
+			</div>
+
+			
+
+			<div class="col">
+			   	<h5 style="color:red;">pLP if func:</h5>
+			   	<br>
+			   
+			   	{% for i in topic %} 
+
+				<tr>
+					<td>{{i.name}}</td>
+				</tr>
+				<br>
+				<br>
+				<hr>
+
+				{% endfor %}
+
+			</div>
+
+			
+
+			<div class="col">
+			   	<h5>Property:</h5>
+			   	<br>
+
+			   	<img src="{% static 'images/plot1.PNG' %}" style="margin: 0px;">
+			   	<br>
+			   	<br>
+			   	<br>
+			   	<img src="{% static 'images/plot1.PNG' %}" style="margin-top: -10px;">
+			 
+			   	<br>
+			   	<br>
+			   	<img src="{% static 'images/plot1.PNG' %}" style="margin-top: 10px;">
+			   	<br>
+			   	<br>
+			   	<br>
+			   	<img src="{% static 'images/plot1.PNG' %}" style="margin-top: -10px;">
+		
+			   	<br>
+			   	<br>
+			   	<img src="{% static 'images/plot1.PNG' %}" style="margin-top: 15px;">
+			   	<br>
+			   	
+			</div>
+
+			<div class="col">
+			   	<h5>Unit:</h5>
+			   	<br>
+
+			  	<img src="{% static 'images/building.PNG' %}" style="margin: 0px;"> 
+			  	<br>
+			  	<br>
+			   	<br>
+			   	<img src="{% static 'images/building.PNG' %}" style="margin-top: -10px;">
+			  
+			   	<br>
+			   	<br>
+			   	<img src="{% static 'images/building.PNG' %}" style="margin-top: 10px;">
+			   	<br>
+			  	<br>
+			   	<br>
+			   	<img src="{% static 'images/building.PNG' %}" style="margin-top: -10px;">
+
+			  	<br>
+			   	<br>
+			   	<img src="{% static 'images/building.PNG' %}" style="margin-top: 15px;">
+			</div>
+
+			<div class="col">
+			   	<h5>Project:</h5>
+			   	<br>
+
+			   <h5 style="color:green;">fbm-6</h5>
+			   <br> 
+			   <br>
+			 
+			   <h5 style="color:green;">fbm-16</h5>
+
+			   <br> 
+			   <br>
+			 
+			   <h5 style="color:green;">fbm-10</h5>
+
+			   <br> 
+			   <br>
+			 
+			   <h5 style="color:green;">fbm-3</h5>
+
+			   <br> 
+			   <br>
+			 
+			   <h5 style="color:green;">fbm-2</h5>
+			</div>
+
+			<div class="col">
+			   	<h5 style="color:green;">PROJ.COST:</h5>
+			   	<br>
+			   
+			   	{% for i in value %}
+				<tr>
+					<td>{{i.total_project_price}}</td>
+				</tr>
+				<br>
+				<br>
+				<hr>
+				{% endfor %}
+			</div>
+
+
+	   	</div>
+	<hr>
+	</div>
+
+
+	<br />
+	<br />
+
+
+	 <br />
+	 <br />
+	 <br />
+
+<h5 style="color:blue;">BUILDING:</h5>
+<br>	 		
+	  	
+
+<div class="container">
+	
+
+	  	<div class="row">
+
+	  		<div class="col">
+
+				
+			   	<h5 style="color:blue;">SmartContract2:</h5>
+			  
+			   	<div class="col">
+					
+							SMART CONTRACTS:
+							<p>Between:</p>
+							<p>Property ownwer and D/B Company</p>
+							<p>Property owner and private liquidity pool</p>
+							<p>Property owner and public liquidity pool</p>
+							
+						</div>
+			</div>
+
+			
+
+
+			<div class="col">
+			   	<h5 style="color:blue;">Dimension:</h5>
+			   
+			   	{% for item in list %}
+				<tr>
+					<td>{{item.}}</td>
+				</tr>
+				<br>
+				<br>
+				<br>
+				{% endfor %}
+			</div>
+
+			
+
+			<div class="col">
+			   	<h5 style="color:blue;">Typ.s apt:</h5>
+			   
+			   	<p>A=70 * u = x</p>
+			   	<p>B=80 * u = x</p>
+			   	<p>C=90 * u = x</p>
+			   	<p>D=100 * u = x</p>
+				<br>
+				<br>
+				<br>
+				
+			</div>
+
+			
+
+			<div class="col">
+			   	<h5 style="color:blue;">Typ.s flex:</h5>
+			   
+			   	<p>A1=30 * u = y</p>
+			   	<p>B1=30 * u = y</p>
+			   	<p>C1=30 * u = y</p>
+			   	<p>D1=30 * u = y</p>
+				<br>
+				<br>
+
+			  
+			   	<br>
+			   
+			   	
+			</div>
+
+			<div class="col">
+			   	<h5 style="color:blue;">Typ.s open:</h5>
+			   
+			   	<p>A2=5 * f * u = z</p>
+			   
+				<br>
+			  	
+			   	
+			</div>
+
+			<div class="col">
+			   <h5 style="color:blue;">Total Units</h5>
+			   
+			   	<p>Tx= X</p>
+			   	<p>Ty= Y</p>
+			   	<p>Tz= Z</p>
+			</div>
+
+			<div class="col">
+			   	<h5 style="color:green;">Total s.m:</h5>
+			   	<p>Tx= Xsm</p>
+			   	<p>Ty= Ysm</p>
+			   	<p>Tz= Zsm</p>
+			   	
+				<br>
+				<br>
+				<br>
+				
+			</div>
+
+
+	   	</div>
+
+	</div>
+
+
+	<br />
+	<br />
+
+
+	 <br />
+	 <br />
+	 <br />
+
+
+
+
+{% endblock content %}

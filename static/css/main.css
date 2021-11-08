@@ -1,17 +1,13 @@
 
 
-#logo{
-    	width: 46px;
-    	height: 46px;
-   		border-radius: 50%;
-    	overflow: hidden;
-    	margin-top: -6px;
+	#logo{
+    	
 	}
 
 	
 
 	body{
-		background-color: #ebeff5;		
+		background-color: #f4f4f4;		
 	 
 	}
 
@@ -27,5 +23,6 @@
 	#completed-pools{
 		background-color: #7CD1C0;
 	}
-		
+
+	
 	

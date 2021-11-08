@@ -1,0 +1,32 @@
+{% extends 'co_servings/main.html' %}
+
+{% block content %}
+
+  <center>
+  <h1>Login</h1>
+
+  
+
+  		<form action=" " method="POST">
+      		{% csrf_token %}
+		 <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1">Username</label>
+    <input type="text" class="form-control" name="username" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" name="password">
+  </div>
+  
+  
+
+
+      <input type="submit" value="Submit" class="btn btn-secondary">
+
+  </form>
+
+ 
+   </center>
+
+{% endblock %}

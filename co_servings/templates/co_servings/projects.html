@@ -1,35 +1,237 @@
+
 {% extends 'co_servings/main.html' %}
 
 {% block content %}
+	{% load static %}
 
-<div class="row">
-	<div class="col-md">
+
+	
+
 		
-		<div class="card card-body">
-			 <h5>PROJECTS:</h5>
-		</div>
-		<div class="card card-body">
-			
-			<table class="table table-5m">
-				<tr>
-					<th>Property</th>
-					<th>Location</th>
-					<th>Dimension</th>
-					<th>Category</th>
-					<th>Building</th>
-					<th>Typology</th>
-				</tr>
+<h5>PROJECTS:</h5>
 
+			
+			
+
+	<div class="container">
+	<hr>
+
+	  	<div class="row">
+
+	  		<div class="col" style="color:blue; text-transform:uppercase;">
+
+				<h5 style="color:blue; text-transform:uppercase;">Owner:</h5>
+				<br>
+			
 				
+				{% for item in list %}
+			
+				
+					<tr>
+						<td>{{item.owner}}</td>
+						
+					</tr>
+					<br>
 					
-			</table>
-				
+					<hr>
+					
+
+					
+				{% endfor %}
+
 			
-		</div>
+
+				
+				
+					{% for i in value %} 
+				
+					<tr>
+						
+						<td>{{i.owner}}</td>
+					</tr>
+				
+					<br>
+					<hr>
+				
+					{% endfor %}
+				
+
+			</div>
+
+
+
+	  		<div class="col" style="text-transform:lowercase;">
+				<h5>Property:</h5>
+				<br>
+				
+				{% for item in list %}
+				<tr>
+					<td>{{item.property_price}}</td>
+				</tr>
+			
+				<br>
+				<hr>
+				
+				{% endfor %}
+
+				{% for i in value %} 
+				
+					<tr>
+						
+						<td>{{i.property_price}}</td>
+					</tr>
+				
+					<br>
+					<hr>
+					
+					{% endfor %}
+				
+
+			</div>
 		
+
+			<div class="col" style=" text-transform:lowercase;">
+			   	<h5>Location:</h5>
+			   	<br>
+			  
+			   	{% for item in list %}
+			   	<tr>
+					<td>{{item.location}}</td>
+				</tr>
+				
+				<br>
+				<hr>
+				
+				{% endfor %}
+
+				{% for i in value %} 
+				
+					<tr>
+						
+						<td>{{i.location}}</td>
+					</tr>
+					
+					<br>
+					<hr>
+					
+					{% endfor %}
+				
+
+			</div>
+			
+
+			<div class="col" style="color:orange; text-transform:uppercase;">
+			   	<h5 style="color:orange;">Name:</h5>
+			   	<br>
+			
+			   	{% for item in list %}
+			   	<tr>
+					<td>{{item.name}}</td>
+				</tr>
+			
+				<br>
+				<hr>
+				
+				{% endfor %}
+
+				{% for i in value %} 
+				
+					<tr>
+						
+						<td>{{i.name}}</td>
+					</tr>
+					
+					<br>
+					<hr>
+					
+					{% endfor %}
+				
+
+			</div>
+
+
+			<div class="col" style="text-transform:lowercase;">
+			   	<h5>Category:</h5>
+			   	<br>
+			   
+			   	{% for item in list %}
+				<tr>
+					<td>{{item.category}}</td>
+				</tr>
+				
+				<br>
+				<hr>
+				
+				{% endfor %}
+
+				{% for i in value %} 
+				
+					<tr>
+						
+						<td>{{i.category}}</td>
+					</tr>
+				
+					<br>
+					<hr>
+					
+					{% endfor %}
+				
+
+			</div>
+			
+
+			<div class="col" style="text-transform:lowercase;">
+			   	<h5>Building:</h5>
+			   	<br>
+			   
+			   	{% for item in list %}
+				<tr>
+					<td>{{item.building}}</td>
+				</tr>
+				
+				<br>
+				<hr>
+				
+				{% endfor %}
+
+				{% for i in value %} 
+				
+					<tr>
+						
+						<td>{{i.building}}</td>
+					</tr>
+					
+					<br>
+					<hr>
+					
+					{% endfor %}
+				
+
+			</div>
+			
+
+			
+
+
+			
+	   	</div>
+	<hr>
 	</div>
 
-</div>
+
+	<br />
+	<br />
 
 
-{% endblock %}
+	 <br />
+	 <br />
+	 <br />
+
+	 		
+	  	
+
+
+
+
+
+{% endblock content %}

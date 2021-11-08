@@ -1,49 +1,112 @@
 {% extends 'co_servings/main.html' %}
 
+{% load static %}
+
+
+
 {% block content %}
-{% include 'co_servings/status.html' %}
-<br>
-<div class="row">
-	<div class="col-md-5">
-		<h5>WEBINVESTORS:</h5>
-		<hr>
-		<div class="card card-body">
-			<a class="btn btn primary btn-5m btn-block" href="">Become Webinvestor</a>
-			<table class="table table-5m">
-				<tr>
-					
-					<th>Webinvestor</th>
-					<th>Private Liquidity Pool</th>
-				</tr>
-					
-			</table>
-				
-			
-		</div>
-		
-	</div>
+
+<style>
+	h1, h6 {
+		color: green;
+	}
+ 
+	h4, h5, td {
+		color: gray;
+	}
+
+
 	
-	<div class="col-md-7">
+</style>
+
+
+
+
+
+
+		
+			 		<h1>Who is Co-Serving Business Platform for ?</h1>
+			 	
+			 		<h4> Investors and Property Owners who want to create profitable and convenient projects.</h4> 
+			 		<h5> The Platform facilitates the interaction between Investors, Property Owners and Renters.</h5> 
+			 		<br>  
+			 		
 					
-		<h5>LAST 5 PRIVATE LIQUIDITY POOLS:</h5>
-		<hr>
-		<div class="card card-body">
-			<a class="btn btn primary btn-15m btn-block" href="">Create Private Pool</a>
-			<table class="table table-5m">
-				<tr>
-					<th>Project</th>
-					<th>Starting date</th>
-					<th>Status</th>
-					<th>Update</th>
-					<th>Remove</th>
 					
-								
-			</table>
-		</div>
-		   		
-	</div>
+
 			
-</div>	
+
+							
+
+	
+     	
+			
+		
+							
+
+						
+
+<div class="container grid" style="margin-left: 290px ">				
+
+	<table >
+		<tr>
+			<td>A Real Estate Platform  that uses Smart Contracts</td>
+		</tr>
+
+		<tr>
+			<td>No Banking bureaucracy: Peer to Peer network</td>
+		</tr>
+
+		<tr>
+			<td><strong>Connected to an app where Tenants rent apartments, without third-party interference, at the lowest price possible.</strong></td>
+		</tr>
+
+		<tr>
+			<td>Business Model based on fair profit's distribution</td> 
+		</tr>
+
+	</table>
+</div>
+
+<br>
+
+
+
+
+
+		
+
+	
+		<h6>This token represents the identity of co-serving's DeFi :</h6>
+
+	
+<img src="{% static 'images/token2.PNG' %}"
+style="object-fit:contain;
+            width:990px;
+            height:140px;
+            border: solid 0px #ccc;
+            margin-top: -30px"/> 
+
+<h6 style="margin-left: 350px">Click here to co-serving HSF app :</h6>
+
+	
+<img src="{% static 'images/app.PNG' %}"
+style="object-fit:contain;
+            width:1090px;
+            height:140px;
+            border: solid 0px #ccc;
+            margin-top: -5px"/> 
+
+		
+
+
+</body>
+
+
+
+
+
+
 
 {% endblock %}
 

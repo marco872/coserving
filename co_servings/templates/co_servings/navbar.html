@@ -1,17 +1,92 @@
 {% load static %}
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <img src="{% static 'images/logo.PNG' %}"> 
+  <img src="{% static 'images/logo3.PNG' %}"> 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
+
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="{% url 'home' %}">Home</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Projects</a>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{% url 'white' %}">White Paper</a>
+          <a class="dropdown-item" href="{% url 'how' %}">How LPs work</a>
+          
+        </div>
       </li>
+
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+          Catalogue
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="{% url 'buildings' %}">Building Types</a>
+        <a class="dropdown-item" href="{% url 'stand' %}">Temporary Units</a>
+        </div>
+      </li>
+
+     
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+          Downloads
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{% url 'venue' %}">Add-Projects</a>
+          <a class="dropdown-item" href="{% url 'liquidity' %}">Add-Liquidity</a>
+          
+        </div>
+      </li> 
+
+
+
+     
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'projects' %}">Projects</a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'liquiditypools' %}">Liquidity Pools</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+          Activities
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{% url 'development' %}">Development</a>
+          <a class="dropdown-item" href="{% url 'rental' %}">Rental</a>
+        </div>
+      </li>
+
+     
+
+
+      
+      {% if user.is_authenticated %}
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+      </li>
+      {% else %}
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'register_user' %}">Register</a>
+      </li>
+
+       <li class="nav-item active">
+        <a class="nav-link" href="{% url 'login' %}">Login</a>
+      </li>
+      {% endif %}
+      
     </ul>
   </div>
 </nav>

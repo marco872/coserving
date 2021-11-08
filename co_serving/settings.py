@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
+import django_heroku
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -20,15 +21,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+
 SECRET_KEY = 'django-insecure-5zkw4y=&($e+*+n_^ca_@azoxda_#-n4%ruvg(f$$80ntfv*6x'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['co-serving.herokuapp.com']
 
 
 # Application definition
+
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -39,7 +42,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'co_servings',
     'bootstrap4',
+    'members',
 ]
+
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -56,7 +62,7 @@ ROOT_URLCONF = 'co_serving.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -76,9 +82,19 @@ WSGI_APPLICATION = 'co_serving.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    #'default': {
+        #'ENGINE': 'django.db.backends.sqlite3',
+        #'NAME': str(os.path.join(BASE_DIR / 'db.sqlite3')),
+
+       'default': {
+
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dfekreriji4815', 
+        'USER': 'ctbzayexvsiefx',
+        'PASSWORD': '3da3f4291608a48dd8c6d19d755ef6642efbee369e4b8cc9db84fe4aec6d5cb6',
+        'HOST': 'ec2-184-73-198-174.compute-1.amazonaws.com',
+        'PORT': '5432',
+
     }
 }
 
@@ -119,13 +135,19 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/static/'
+#STATIC_URL = '/static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = "/static/"
+django_heroku.settings(locals())
+
+
 
 MEDIA_URL = '/images/'
 
 STATICFILES_DIRS =[
     os.path.join(BASE_DIR, 'static'),
-    
+
 ]
 
 # Default primary key field type

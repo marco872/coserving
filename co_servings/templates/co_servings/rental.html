@@ -1,0 +1,108 @@
+{% extends 'co_servings/main.html' %}
+
+{% block content %}
+	{% load static %}
+
+
+
+		
+<h5 style="color:orange;">PROJECT NAME:</h5>
+
+			
+			
+	<div class="container">
+
+	
+
+	  	<div class="row">
+
+	  		<div class="col">
+			   	<h5 style="color:blue;">Typ.s apt:</h5>
+			   
+			   	<p>A=70 * u = x * € = x€</p>
+			   	<p>B=80 * u = x * € = x€</p>
+			   	<p>C=90 * u = x * € = x€</p>
+			   	<p>D=100 * u = x * € = x€</p>
+				<br>
+				<br>
+				<br>
+				
+			</div>
+
+			
+
+			<div class="col">
+			   	<h5 style="color:blue;">Typ.s flex:</h5>
+			   
+			   	<p>A1=30 * u = y * € = y€</p>
+			   	<p>B1=30 * u = y * € = y€</p>
+			   	<p>C1=30 * u = y * € = y€</p>
+			   	<p>D1=30 * u = y * € = y€</p>
+				<br>
+				<br>
+
+			  
+			   	<br>
+			   
+			   	
+			</div>
+
+			<div class="col">
+			   	<h5 style="color:blue;">Typ.s open:</h5>
+			   
+			   	<p>A2=5 * f * u = z * € = z€</p>
+			   
+				<br>
+			  	
+			   	
+			</div>
+
+			<div class="col">
+			   <h5 style="color:blue;">Total Units</h5>
+			   
+			   	<p>Tx= X€</p>
+			   	<p>Ty= Y€</p>
+			   	<p>Tz= Z€</p>
+			</div>
+
+
+
+	   	</div>
+
+	</div>
+
+{% load static %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <img src="{% static 'images/log2.PNG' %}"> 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'home' %}">Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'white' %}">SmartContractToken</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Booking</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Payment</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Project Financial overview</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Consierge</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+{% endblock content %}

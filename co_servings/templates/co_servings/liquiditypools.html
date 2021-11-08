@@ -1,0 +1,130 @@
+{% extends 'co_servings/main.html' %}
+{% load static %}
+
+{% block content %}
+{% include 'co_servings/status.html' %}
+
+
+
+
+
+<br>
+<div class="row">
+	
+
+	<div class="col-md-12">
+					
+		<h5>LAST 5 PRIVATE LIQUIDITY POOLS:</h5>
+		<hr>
+		<div class="card card-body">
+			<a class="btn btn primary btn-15m btn-block" href="">Create Private Pool</a>
+			
+			
+
+
+		
+
+					
+			<div class="row">
+
+						<div class="col" style="text-transform:uppercase;">
+					
+							Type:
+							<br>
+							<br>
+
+							{% for i in topic %}
+								<tr>
+									<td>{{i.topic}}</td>
+								</tr>
+							<br>	
+							<br>
+							{% endfor %}
+							<br/>
+							<br/>
+						</div>		 
+
+
+
+						<div class="col" style="text-transform:uppercase;">
+					
+							Liquidity Pool Name:
+							<br>
+							<br>
+							{% for i in topic %}
+								<tr>
+									<td>{{i.name}}</td>
+								</tr>
+							<br>	
+							<br>
+							{% endfor %}
+							<br/>
+							<br/>
+
+						</div>
+
+						<div class="col" style="color:blue; text-transform:lowercase;">
+					
+							Liquidity Pool Value:
+							<br>
+							<br>
+							{% for i in topic %}
+								<tr>
+									<td>{{i.price}}</td>
+								</tr>
+							<br>	
+							<br>
+							{% endfor %}
+							<br/>
+							<br/>
+						</div>
+
+						<div class="col" style="color:blue; text-transform:lowercase;">
+					
+							Status:
+							<br/>
+							<br>
+							{% for i in topic %}
+								<tr>
+									<td>{{i.status}}</td>
+								</tr>
+							<br>	
+							<br>
+							{% endfor %}
+							<br/>
+							<br/>
+						</div>
+
+						<div class="col" style="color:blue; text-transform:lowercase;">
+					
+							SMART CONTRACTS:
+							<br>
+							<br>
+							{% for i in topic %}
+								<tr>
+									<td>{{i.smart_contracts}}</td>
+								</tr>
+						
+							<br/>
+							<br>
+							{% endfor %}
+							<br/>
+							<br/>
+						</div>
+
+
+
+					</div>
+			</div>
+				
+	
+						
+					
+
+		</div>
+		   		
+	</div>
+			
+</div>	
+
+{% endblock %}
