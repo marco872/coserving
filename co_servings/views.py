@@ -112,3 +112,5 @@ def plan(request):
 def stand(request):
 	return render(request, 'co_servings/stand.html')
 
+def token(request):
+	return render(request, 'co_servings/token.html')

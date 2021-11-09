@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import Webinvestor, Project, Liquidity_Pool, Investment, Development, Venue, Liquidity, Building, Plan
+from .models import Webinvestor, Project, Liquidity_Pool, Investment, Development, Venue, Liquidity, Building, Plan, Token
 
 admin.site.register(Webinvestor)
 admin.site.register(Project)
@@ -12,4 +12,6 @@ admin.site.register(Venue)
 admin.site.register(Liquidity)
 admin.site.register(Building)
 admin.site.register(Plan)
+admin.site.register(Token)
+
 

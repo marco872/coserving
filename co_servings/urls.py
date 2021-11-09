@@ -19,5 +19,6 @@ urlpatterns = [
   	path('buildings/', views.buildings, name="buildings"),
     path('plan/', views.plan, name="plan"),
     path('stand/', views.stand, name="stand"),
+    path('token/', views.token, name="token"),
     
 ]
