@@ -95,7 +95,13 @@ def development(request):
 	
 
 def rental(request):
-	return render(request, 'co_servings/rental.html')
+	projects = Project.objects.all()
+	venue = Venue.objects.all()
+
+	context = {'list': projects, 'value': venue}
+	return render(request, 'co_servings/rental.html',context )
+
+	
 
 def buildings(request):
 	return render(request, 'co_servings/buildings.html')
@@ -105,3 +111,4 @@ def plan(request):
 
 def stand(request):
 	return render(request, 'co_servings/stand.html')
+

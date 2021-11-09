@@ -12,3 +12,4 @@ admin.site.register(Venue)
 admin.site.register(Liquidity)
 admin.site.register(Building)
 admin.site.register(Plan)
+
