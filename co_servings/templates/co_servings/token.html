@@ -1,9 +1,159 @@
 
 {% extends 'co_servings/main.html' %}
 {% load static %}
+
+
 {% block content %}
+<style type="text/css">
 
 
-<p>Hello token page</p>
+
+h5 {
+    color: gray;
+  }
+
+
+	h1, h6 {
+		color: green;
+	}
+ 
+	h4, h5, td {
+		color: gray;
+	}
+
+
+	
+</style>
+
+
+
+
+
+
+
+	<div class="container">
+			<h1 style="margin-top:100px">Welcome to the world’s</h1>
+				<h1 style="margin-left: 250px">most innovative</h1>
+					<h4 style="margin-left: 430px">online </h4>											
+					   <h1 style="margin-left: 500px"> Real Estate rental program</h1>			
+ 	</div>
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<h6 style="margin-left: 0px">Tenants' navigation bar</h6>
+
+{% load static %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'home' %}">Home</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Qualifications
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{% url 'white' %}">Informations</a>
+        
+          <a class="dropdown-item" href="{% url 'how' %}">Vaccine Protocol</a>
+          
+        </div>
+
+         <li class="nav-item active">
+        <a class="nav-link" href="{% url 'projects' %}">Benefits</a>
+      </li
+      </li>
+
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+        Offers
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="{% url 'buildings' %}">Guestroom</a>
+        <a class="dropdown-item" href="{% url 'stand' %}">Office</a>
+        <a class="dropdown-item" href="{% url 'stand' %}">Nursing</a>
+        <a class="dropdown-item" href="{% url 'stand' %}">Retail</a>
+        </div>
+      </li>
+
+     
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+        Downloads
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{% url 'venue' %}">Long Term Contracts</a>
+          <a class="dropdown-item" href="{% url 'liquidity' %}">Smart Contract</a>
+          
+        </div>
+      </li> 
+
+
+
+     
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'projects' %}">Rentals Opportunities</a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'liquiditypools' %}">0</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+         0
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{% url 'development' %}">Development</a>
+          <a class="dropdown-item" href="{% url 'rental' %}">Overview</a>
+        </div>
+      </li>
+
+     
+
+
+      
+      {% if user.is_authenticated %}
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+      </li>
+      {% else %}
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'register_user' %}">Register</a>
+      </li>
+
+       <li class="nav-item active">
+        <a class="nav-link" href="{% url 'login' %}">Login</a>
+      </li>
+      {% endif %}
+      
+    </ul>
+  </div>
+</nav>
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
 
 {% endblock %}
