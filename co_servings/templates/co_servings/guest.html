@@ -1,4 +1,3 @@
-
 {% extends 'co_servings/main.html' %}
 {% load static %}
 
@@ -33,9 +32,9 @@ h5 {
 
 	<div class="container">
 			<h1 style="margin-top:100px">Welcome to the world’s</h1>
-				<h1 style="margin-left: 250px">most innovative</h1>
+				<h1 style="margin-left: 250px">most trasparent</h1>
 					<h4 style="margin-left: 430px">online </h4>											
-					   <h1 style="margin-left: 500px"> Real Estate rental program</h1>			
+					   <h1 style="margin-left: 500px"> Real Estate booking program</h1>			
  	</div>
 
 
@@ -48,7 +47,7 @@ h5 {
 
 
 
-<h6 style="margin-left: 0px">Tenants' navigation bar</h6>
+<h6 style="margin-left: 0px">Guests' navigation bar</h6>
 
 {% load static %}
 
@@ -67,7 +66,7 @@ h5 {
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="{% url 'white' %}">Informations</a>
-          <a class="dropdown-item" href="{% url 'how' %}">Hosting Rules</a>
+          <a class="dropdown-item" href="{% url 'how' %}">Guest Rules</a>
           <a class="dropdown-item" href="{% url 'how' %}">Vaccine Protocol</a>
           
         </div>
@@ -97,7 +96,7 @@ h5 {
         Downloads
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{% url 'venue' %}">Long Term Contracts</a>
+          <a class="dropdown-item" href="{% url 'venue' %}">Short Term Contracts</a>
           <a class="dropdown-item" href="{% url 'liquidity' %}">Smart Contract</a>
           
         </div>
@@ -107,7 +106,7 @@ h5 {
 
      
       <li class="nav-item active">
-        <a class="nav-link" href="{% url 'projects' %}">Rental Opportunities</a>
+        <a class="nav-link" href="{% url 'projects' %}">Guest Opportunities</a>
       </li>
 
       <li class="nav-item active">
@@ -117,11 +116,11 @@ h5 {
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
-         Tenant's Activities
+      Guest's Booking
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{% url 'development' %}">Development</a>
-          <a class="dropdown-item" href="{% url 'rental' %}">Overview</a>
+          <a class="dropdown-item" href="{% url 'development' %}">Reservation</a>
+          <a class="dropdown-item" href="{% url 'rental' %}">Payment</a>
         </div>
       </li>
 

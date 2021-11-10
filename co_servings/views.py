@@ -114,3 +114,6 @@ def stand(request):
 
 def token(request):
 	return render(request, 'co_servings/token.html')
+
+def guest(request):
+	return render(request, 'co_servings/guest.html')
