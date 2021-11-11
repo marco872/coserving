@@ -9,16 +9,16 @@
 
 
 h5 {
-    color: gray;
+    color: black;
   }
 
 
 	h1, h6 {
-		color: green;
+		color: black;
 	}
  
 	h4, h5, td {
-		color: gray;
+		color: black;
 	}
 
 
@@ -26,7 +26,12 @@ h5 {
 </style>
 
 
-
+<body class="bg-image"
+		style="background-image: url('/static/images/marco2.jpg');
+		background-repeat: no-repeat;
+		background-size:100%;
+		color:darkgrey;
+		height:550px;">
 
 
 
@@ -48,7 +53,7 @@ h5 {
 
 
 
-<h6 style="margin-left: 0px">Tenants' navigation bar</h6>
+<h6 style="margin-left: 0px;color:green">Tenants' navigation bar</h6>
 
 {% load static %}
 
@@ -71,28 +76,28 @@ h5 {
           <a class="dropdown-item" href="{% url 'how' %}">Vaccine Protocol</a>
           
         </div>
-
-         <li class="nav-item active">
-        <a class="nav-link" href="{% url 'projects' %}">Benefits</a>
-      </li
       </li>
 
-       <li class="nav-item dropdown">
+       
+
+      <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
-        Offers
+        Benefits
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" href="{% url 'buildings' %}">Guestroom</a>
-        <a class="dropdown-item" href="{% url 'stand' %}">Office</a>
-        <a class="dropdown-item" href="{% url 'stand' %}">Nursing</a>
-        <a class="dropdown-item" href="{% url 'stand' %}">Retail</a>
+        <a class="dropdown-item" href="{% url 'buildings' %}">Rent Reduction</a>
+        <a class="dropdown-item" href="{% url 'stand' %}">Token Program</a>
+       
         </div>
-      </li>
+
+
+     </li>
 
      
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	
 
         Downloads
         </a>
@@ -157,3 +162,5 @@ h5 {
 
 
 {% endblock %}
+
+</body>

@@ -31,18 +31,21 @@
 .button5 {border-radius: 50%;}
 
 
+}
 
-h5 {
-    color: gray;
+
+
+h6 {
+    color:black;
   }
 
 
-	h1, h6 {
-		color: green;
+	h1 {
+		color: black;
 	}
  
 	h4, h5, td {
-		color: gray;
+		color: black;
 	}
 
 
@@ -51,15 +54,22 @@ h5 {
 
 
 
-<body>
+<body class="bg-image"
+		style="background-image: url('/static/images/marco2.jpg');
+		background-repeat: no-repeat;
+		background-size:100%;
+		color:darkgrey;
+		height:550px;
+		
+		">
 
 
 		
-			 		<h1>Who is Co-Serving Business Platform for ?</h1>
+			 		<h1 style="margin-left: 150px ;margin-top: 25px"><strong>Who is Co-Serving Business Platform for ?</strong></h1>
 			 	
-			 		<h4> Investors and Property Owners who want to create financial sustainable projects.</h4> 
-			 		<h4> Tenants who need fair market value  apartments.</h4>
-			 		<h4> Guests who enjoy transparency in spending.</h4>
+			 		<h4 style="margin-left: 150px"> <strong>Investors and Property Owners who want to create financial sustainable projects.</strong></h4> 
+			 		<h4 style="margin-left: 150px"> <strong>Tenants who need fair market value  apartments.</strong></h4>
+			 		<h4 style="margin-left: 150px"> <strong>Guests who enjoy transparency in spending.</strong></h4>
 			 		 
 			 		<br>  
 			 		
@@ -82,11 +92,11 @@ h5 {
 
 	<table >
 		<tr>
-			<td>A Real Estate Platform  that uses Smart Contracts,</td>
+			<td><strong>A Real Estate Platform  that uses Smart Contracts,</strong></td>
 		</tr>
 
 		<tr>
-			<td> and Peer to Peer financial networks.</td>
+			<td><strong>and Peer to Peer financial networks.</strong></td>
 		</tr>
 
 		<tr>
@@ -94,7 +104,7 @@ h5 {
 		</tr>
 
 		<tr>
-			<td> Its Business Model is based on fair profit's distribution.</td> 
+			<td><strong>Its Business Model is based on fair profit's distribution.</strong></td> 
 		</tr>
 
 	</table>
@@ -103,23 +113,22 @@ h5 {
 <br>
 
 
-<div class="container">
-	<img src="{% static 'images/token2.png' %}" style= "margin-bottom: -200px">
 
-  
+
+   <div class="container" style="margin-left: 130px" >
   
 
    				<a href="{% url 'token' %}">
                     
-                  <button class="button button4">Tenant click here  to find the apartment you deserve</button>    
+                  <button class="button button4" style="color:black">Tenant click here  to find the apartment you deserve</button>    
 
                 </a> 
 
  </div>              
- <div class="container" style="margin-left: 600px" >
+ <div class="container" style="margin-left: 550px" >
                 <a href="{% url 'guest' %}">
                     
-                  <button class="button button4" style="background-color:darkgrey">Guest click here  to find your best accomodation</button>    
+                  <button class="button button4" style="background-color:darkgrey; color:black">Guest click here  to find your best accomodation</button>    
 
                 </a> 
 </div>
