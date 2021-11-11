@@ -1,93 +1,46 @@
 
-{% extends 'co_servings/main.html' %}
+
 {% load static %}
 
-
-{% block content %}
-<style type="text/css">
-
-
-  <style type="text/css">
-.button {
-  background-color: #04AA6D;
-  border: none;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-}
-
-.button1 {border-radius: 2px;}
-.button2 {border-radius: 4px;}
-.button3 {border-radius: 8px;}
-.button4 {border-radius: 12px;}
-.button5 {border-radius: 50%;}
-
-
-}
-
-
-
-h6 {
-    color:black;
-  }
-
-
-  h1 {
-    color: black;
-  }
- 
-  h4, h5, td {
-    color: black;
-  }
-
-
-  
-</style>
-
-
-
-
-
-
-
+<!DOCTYPE html>
+<html>
+<head>
 	
 
 
 
-<body class="bg-image"
-		style="background-image: url('/static/images/marco2.jpg');
-		background-repeat: no-repeat;
-		background-size:100%;
-		color:darkgrey;
-		height:550px;">
 
+	<meta name="viewport" content="width=device-width">
+
+	
+    
+	<title>CO-SERVING</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+	
+	<link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">
+
+
+
+
+</head>
+<br>
+<body>
 
 
 
 	<div class="container">
-			<h1 style="margin-top:100px">Welcome to the world’s</h1>
-				<h1 style="margin-left: 250px">most innovative</h1>
-					<h4 style="margin-left: 430px">online </h4>											
-					   <h1 style="margin-left: 500px"> Real Estate rental program</h1>			
- 	</div>
+		{% if messages %}
+		  {% for message in messages %}
+		 
+		  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+		  {{ message }}
+		  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		  </button>
+		  </div>
 
-
-
-<br>
-<br>
-<br>
-<br>
-
-
-
-
-<h6 style="margin-left: 0px;color:green">Tenants' navigation bar</h6>
-
-{% load static %}
+		  {% endfor %}
+    	{% endif %}
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   
@@ -191,10 +144,9 @@ h6 {
 <br>
 <br>
 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
-
-
-{% endblock %}
-
-</body>
+<p>hello page information1></p>

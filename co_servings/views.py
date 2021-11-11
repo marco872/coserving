@@ -117,3 +117,63 @@ def token(request):
 
 def guest(request):
 	return render(request, 'co_servings/guest.html')
+
+def information1(request):
+	return render(request, 'co_servings/information1.html')
+
+def information2(request):
+	return render(request, 'co_servings/information2.html')
+
+def hostingrules(request):
+	return render(request, 'co_servings/hostingrules.html')
+
+def vaccineprotocol1(request):
+	return render(request, 'co_servings/vaccineprotocol1.html')
+
+def vaccineprotocol2(request):
+	return render(request, 'co_servings/vaccineprotocol2.html')
+
+def rentreduction(request):
+	return render(request, 'co_servings/rentreduction.html')
+
+def tokenprogram1(request):
+	return render(request, 'co_servings/tokenprogram1.html')
+
+def tokenprogram2(request):
+	return render(request, 'co_servings/tokenprogram2.html')
+
+def rentopportunity(request):
+	return render(request, 'co_servings/rentopportunity.html')
+
+def ourcommunity1(request):
+	return render(request, 'co_servings/ourcommunity1.html')
+
+def ourcommunity2(request):
+	return render(request, 'co_servings/ourcommunity2.html')
+
+def development1(request):
+	return render(request, 'co_servings/development1.html')
+
+def overview1(request):
+	return render(request, 'co_servings/overview1.html')
+
+def overview2(request):
+	return render(request, 'co_servings/overview2.html')
+
+def guestrules(request):
+	return render(request, 'co_servings/guestrules.html')
+
+def costtrasparency(request):
+	return render(request, 'co_servings/costtrasparency.html')
+
+def guestopportunity(request):
+	return render(request, 'co_servings/guestopportunity.html')
+
+def reservation(request):
+	return render(request, 'co_servings/reservation.html')
+
+def payment1(request):
+	return render(request, 'co_servings/payment1.html')
+
+def payment2(request):
+	return render(request, 'co_servings/payment2.html')
