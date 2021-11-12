@@ -40,7 +40,8 @@
           About
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{% url 'white' %}">Co-Serving</a>
+          <a class="dropdown-item" href="{% url 'development1' %}">Modus Operandi</a>
+          <a class="dropdown-item" href="{% url 'white' %}">Co-Serving Action</a>
           <a class="dropdown-item" href="{% url 'how' %}">Liquidity-Pools</a>
         </div>
       </li>
@@ -58,9 +59,7 @@
           Catalogue
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{% url 'buildings' %}"
-            >Building Types</a
-          >
+          <a class="dropdown-item" href="{% url 'buildings' %}">Building Types</a>
           <a class="dropdown-item" href="{% url 'stand' %}">Temporary Units</a>
         </div>
       </li>
@@ -79,21 +78,19 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="{% url 'venue' %}">Add-Projects</a>
-          <a class="dropdown-item" href="{% url 'liquidity' %}"
-            >Add-Liquidity</a
-          >
+          <a class="dropdown-item" href="{% url 'liquidity' %}">Add-Liquidity</a>
         </div>
       </li>
 
-      <li class="nav-item active">
-        <a class="nav-link" href="{% url 'projects' %}">Projects</a>
-      </li>
+      
 
       <li class="nav-item active">
-        <a class="nav-link" href="{% url 'liquiditypools' %}"
-          >Liquidity Pools</a
-        >
+        <a class="nav-link" href="{% url 'projects' %}">1-Projects</a>
       </li>
+       <li class="nav-item active">
+        <a class="nav-link" href="{% url 'liquiditypools' %}">1-Liquidity Pools</a>
+      </li>
+     
 
       <li class="nav-item dropdown">
         <a
@@ -108,10 +105,8 @@
           Activities
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{% url 'development' %}"
-            >Development</a
-          >
-          <a class="dropdown-item" href="{% url 'rental' %}">Overview</a>
+          <a class="dropdown-item" href="{% url 'development' %}">3-Developments</a>
+          <a class="dropdown-item" href="{% url 'rental' %}">4-Overview</a>
         </div>
       </li>
 
