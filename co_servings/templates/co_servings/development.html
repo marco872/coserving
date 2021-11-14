@@ -121,32 +121,37 @@
 			   	<img src="{% static 'images/building.PNG' %}" style="margin-top: 15px;">
 			</div>
 
-			<div class="col">
-			   	<h5>Project:</h5>
-			   	<br>
+			 <div class="col" style="text-transform:lowercase;">
+         		 <h5>Building:</h5>
+         		 <br>
+         
+          		{% for item in list %}
+        			<tr>
+          				<td>{{item.building}}</td>
+        			</tr>
+        
+        		<br>
+        		<hr>
+        
+        		{% endfor %}
 
-			   <h5 style="color:green;">fbm-6</h5>
-			   <br> 
-			   <br>
-			 
-			   <h5 style="color:green;">fbm-16</h5>
+        		{% for i in value %} 
+        
+          		<tr>
+            
+            		<td>{{i.building}}</td>
+          		</tr>
+          
+          		<br>
+          	
+          		<br>
+          		<hr>
+          
+          		{% endfor %}
+        
 
-			   <br> 
-			   <br>
-			 
-			   <h5 style="color:green;">fbm-10</h5>
-
-			   <br> 
-			   <br>
-			 
-			   <h5 style="color:green;">fbm-3</h5>
-
-			   <br> 
-			   <br>
-			 
-			   <h5 style="color:green;">fbm-2</h5>
-			</div>
-
+      			</div>
+      
 			<div class="col">
 			   	<h5 style="color:green;">PROJ.COST:</h5>
 			   	<br>

@@ -147,5 +147,189 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
-<p>hello page rent opportunity></p>
-<h6>copyright@2021</h6>
+
+
+{% block content %}
+
+<h5>PROJECTS:</h5>
+
+      
+      
+
+  <div class="container">
+  <hr>
+
+      <div class="row">
+
+        <div class="col" style="color:blue; text-transform:uppercase;">
+
+        <h5 style="color:blue; text-transform:uppercase;">Owner:</h5>
+        <br>
+      
+        
+        {% for item in list %}
+      
+        
+          <tr>
+            <td>{{item.owner}}</td>
+            
+          </tr>
+          <br>
+          
+          <hr>
+          
+
+          
+        {% endfor %}
+
+      
+
+        
+        
+          {% for i in value %} 
+        
+          <tr>
+            
+            <td>{{i.owner}}</td>
+          </tr>
+        
+          <br>
+          <hr>
+        
+          {% endfor %}
+        
+
+      </div>
+
+
+
+       
+      <div class="col" style=" text-transform:lowercase;">
+          <h5>Location:</h5>
+          <br>
+        
+          {% for item in list %}
+          <tr>
+          <td>{{item.location}}</td>
+        </tr>
+        
+        <br>
+        <hr>
+        
+        {% endfor %}
+
+        {% for i in value %} 
+        
+          <tr>
+            
+            <td>{{i.location}}</td>
+          </tr>
+          
+          <br>
+          <hr>
+          
+          {% endfor %}
+        
+
+      </div>
+      
+
+     
+
+      <div class="col" style="text-transform:lowercase;">
+          <h5>Category:</h5>
+          <br>
+         
+          {% for item in list %}
+        <tr>
+          <td>{{item.category}}</td>
+        </tr>
+        
+        <br>
+        <hr>
+        
+        {% endfor %}
+
+        {% for i in value %} 
+        
+          <tr>
+            
+            <td>{{i.category}}</td>
+          </tr>
+        
+          <br>
+          <hr>
+          
+          {% endfor %}
+        
+
+      </div>
+      
+
+      <div class="col" style="text-transform:lowercase;">
+          <h5>Building:</h5>
+          <br>
+         
+          {% for item in list %}
+        <tr>
+          <td>{{item.building}}</td>
+        </tr>
+        
+        <br>
+        <hr>
+        
+        {% endfor %}
+
+        {% for i in value %} 
+        
+          <tr>
+            
+            <td>{{i.building}}</td>
+          </tr>
+          
+          <br>
+          <hr>
+          
+          {% endfor %}
+        
+
+      </div>
+      
+      <div class="col">
+          <h5 style="color:green;">PROJ.COST:</h5>
+          <br>
+         
+          {% for i in value %}
+        <tr>
+          <td>{{i.total_project_price}}</td>
+        </tr>
+      
+        <br>
+        <hr>
+        {% endfor %}
+      </div>
+      
+
+
+      
+      </div>
+  <hr>
+  </div>
+
+
+  <br />
+  <br />
+
+
+   <br />
+   <br />
+   <br />
+
+      
+      
+
+
+
+
+
+{% endblock content %}

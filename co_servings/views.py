@@ -142,8 +142,23 @@ def tokenprogram1(request):
 def tokenprogram2(request):
 	return render(request, 'co_servings/tokenprogram2.html')
 
+
+
+
 def rentopportunity(request):
-	return render(request, 'co_servings/rentopportunity.html')
+
+	projects = Project.objects.all()
+	venue = Venue.objects.all()
+
+	context = {'list': projects, 'value': venue}
+	
+	return render(request, 'co_servings/rentopportunity.html',context )
+
+
+
+
+
+
 
 def ourcommunity1(request):
 	return render(request, 'co_servings/ourcommunity1.html')
