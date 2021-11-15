@@ -192,3 +192,6 @@ def payment1(request):
 
 def payment2(request):
 	return render(request, 'co_servings/payment2.html')
+
+def trading(request):
+	return render(request, 'co_servings/trading.html')

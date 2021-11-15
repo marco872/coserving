@@ -1,8 +1,8 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import Webinvestor, Project, Liquidity_Pool, Investment, Development, Venue, Liquidity, Building, Plan, Token, Guest, Information1, Information2, Hostingrules, Vaccineprotocol1, Vaccineprotocol2, Rentreduction, Tokenprogram1, Tokenprogram2, Rentopportunity, Ourcommunity1, Ourcommunity2, Development1, Overview1, Overview2, Guestrules, Costtrasparency, Guestopportunity, Reservation, Payment1, Payment2
-Costtrasparency, Guestopportunity, Reservation, Payment1, Payment2
+from .models import Webinvestor, Project, Liquidity_Pool, Investment, Development, Venue, Liquidity, Building, Plan, Token, Guest, Information1, Information2, Hostingrules, Vaccineprotocol1, Vaccineprotocol2, Rentreduction, Tokenprogram1, Tokenprogram2, Rentopportunity, Ourcommunity1, Ourcommunity2, Development1, Overview1, Overview2, Guestrules, Costtrasparency, Guestopportunity, Reservation, Payment1, Payment2, Trading
+
 
 admin.site.register(Webinvestor)
 admin.site.register(Project)
@@ -35,5 +35,5 @@ admin.site.register(Guestopportunity)
 admin.site.register(Reservation)
 admin.site.register(Payment1)
 admin.site.register(Payment2)
-
+admin.site.register(Trading)
 
