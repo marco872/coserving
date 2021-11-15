@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import Webinvestor, Project, Liquidity_Pool, Investment, Development, Venue, Liquidity, Building, Plan, Token, Guest, Information1, Information2, Hostingrules, Vaccineprotocol1, Vaccineprotocol2, Rentreduction, Tokenprogram1, Tokenprogram2, Rentopportunity, Ourcommunity1, Ourcommunity2, Development1, Overview1, Overview2, Guestrules, Costtrasparency, Guestopportunity, Reservation, Payment1, Payment2, Trading
+from .models import Webinvestor, Project, Liquidity_Pool, Investment, Development, Venue, Liquidity, Building, Plan, Token, Guest, Information1, Information2, Hostingrules, Vaccineprotocol1, Vaccineprotocol2, Rentreduction, Tokenprogram1, Tokenprogram2, Rentopportunity, Ourcommunity1, Ourcommunity2, Development1, Overview1, Overview2, Guestrules, Costtrasparency, Guestopportunity, Reservation, Payment1, Payment2, Trading, Investorsrules, Tradingclarity, Tokenprogram3, Tradingdesk, Ourcommunity3, Report, News
 
 
 admin.site.register(Webinvestor)
@@ -36,4 +36,10 @@ admin.site.register(Reservation)
 admin.site.register(Payment1)
 admin.site.register(Payment2)
 admin.site.register(Trading)
-
+admin.site.register(Investorsrules)
+admin.site.register(Tradingclarity)
+admin.site.register(Tokenprogram3)
+admin.site.register(Tradingdesk)
+admin.site.register(Ourcommunity3)
+admin.site.register(Report)
+admin.site.register(News)

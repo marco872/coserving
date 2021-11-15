@@ -1,0 +1,182 @@
+{% extends 'co_servings/main.html' %} {% load static %} {% block content %}
+<style type="text/css">
+
+     <style type="text/css">
+  .button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+  }
+
+  .button1 {border-radius: 2px;}
+  .button2 {border-radius: 4px;}
+  .button3 {border-radius: 8px;}
+  .button4 {border-radius: 12px;}
+  .button5 {border-radius: 50%;}
+
+
+  }
+
+
+
+
+  h5 {
+      color: black;
+    }
+
+
+  	h1, h6 {
+  		color: black;
+  	}
+
+  	h4, h5, td {
+  		color: black;
+  	}
+</style>
+
+<body
+  class="bg-image"
+  style="
+    background-image: url('/static/images/marco2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: darkgrey;
+    height: 550px;
+  "
+>
+  
+  <h6 style="margin-left: 0px; color: black">Investors' navigation bar</h6>
+
+  {% load static %}
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <a href="{% url 'trading' %}">
+          <button class="button button4" style="color: black">Investors</button>
+        </a>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Qualifications
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{% url 'information2' %}"
+              >Membership</a
+            >
+            <a class="dropdown-item" href="{% url 'investorsrules' %}"
+              >Investors Rules</a
+            >
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Benefits
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{% url 'tradingclarity' %}"
+              >Trading-clarity</a
+            >
+            <a class="dropdown-item" href="{% url 'tokenprogram3' %}"
+              >Token program</a
+            >
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Downloads
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{% url 'venue' %}"
+              >Short Term Contracts</a
+            >
+            <a class="dropdown-item" href="{% url 'liquidity' %}"
+              >Smart Contract</a
+            >
+          </div>
+        </li>
+
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'tradingdesk' %}">6-Trading Desk</a>
+        </li>
+
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'ourcommunity3' %}">Our Community</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Trading
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{% url 'report' %}">Report</a>
+            <a class="dropdown-item" href="{% url 'news' %}">News</a>
+          </div>
+        </li>
+
+        {% if user.is_authenticated %}
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+        </li>
+        {% else %}
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'register_user' %}">Register</a>
+        </li>
+
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'login' %}">Login</a>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+  </nav>
+
+  <br />
+  <br />
+  <br />
+  <br />
+  HERE IS THE REPORT
+
+  <h6>copyright@2021</h6>
+  {% endblock %}
+</body>

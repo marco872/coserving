@@ -195,3 +195,24 @@ def payment2(request):
 
 def trading(request):
 	return render(request, 'co_servings/trading.html')
+
+def investorsrules(request):
+	return render(request, 'co_servings/investorsrules.html')
+
+def tradingclarity(request):
+	return render(request, 'co_servings/tradingclarity.html')
+
+def tokenprogram3(request):
+	return render(request, 'co_servings/tokenprogram3.html')
+
+def tradingdesk(request):
+	return render(request, 'co_servings/tradingdesk.html')
+
+def ourcommunity3(request):
+	return render(request, 'co_servings/ourcommunity3.html')
+
+def report(request):
+	return render(request, 'co_servings/report.html')
+
+def news(request):
+	return render(request, 'co_servings/news.html')

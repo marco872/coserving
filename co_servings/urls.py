@@ -42,6 +42,13 @@ urlpatterns = [
     path('payment1/', views.payment1, name="payment1"),
     path('payment2/', views.payment2, name="payment2"),
     path('trading/', views.trading, name="trading"),
+    path('investorsrules/', views.investorsrules, name="investorsrules"),
+    path('tradingclarity/', views.tradingclarity, name="tradingclarity"),
+    path('tokenprogram3/', views.tokenprogram3, name="tokenprogram3"),
+    path('tradingdesk/', views.tradingdesk, name="tradingdesk"),
+    path('ourcommunity3/', views.ourcommunity3, name="ourcommunity3"),
+    path('report/', views.report, name="report"),
+    path('news/', views.news, name="news"),
 
 
 
