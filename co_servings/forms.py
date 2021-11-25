@@ -1,6 +1,6 @@
 from django import forms
 from django.forms import ModelForm
-from .models import Venue, Liquidity 
+from .models import Venue, Liquidity, Collateral 
 
 
 class VenueForm(ModelForm):
@@ -35,3 +35,22 @@ class LiquidityForm(ModelForm):
 			'smart_contracts': forms.TextInput(attrs={'class':'form-control'}),
 			
 		}	
+
+
+class CollateralForm(ModelForm):
+	class Meta:
+		model = Collateral
+		fields = ('state', 'city', 'ministry', 'pool', 'amount')
+
+		widgets = {
+			'state': forms.TextInput(attrs={'class':'form-control'}),
+			'city': forms.TextInput(attrs={'class':'form-control'}),
+			'ministry': forms.TextInput(attrs={'class':'form-control'}),
+			
+			'pool': forms.TextInput(attrs={'class':'form-control'}),
+			'amount': forms.TextInput(attrs={'class':'form-control'}),
+			
+			
+
+		}	
+		

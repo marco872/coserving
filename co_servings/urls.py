@@ -49,7 +49,8 @@ urlpatterns = [
     path('ourcommunity3/', views.ourcommunity3, name="ourcommunity3"),
     path('report/', views.report, name="report"),
     path('news/', views.news, name="news"),
-
+    path('collateral/', views.collateral, name="collateral"),
+    path('gov/', views.gov, name="gov"),
 
 
 

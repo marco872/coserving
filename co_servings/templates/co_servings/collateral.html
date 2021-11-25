@@ -1,0 +1,36 @@
+{% extends 'co_servings/main.html' %}
+
+{% block content %}
+
+
+{% if user.is_authenticated %}
+
+  <h1>Add Collateral To Liquidity Pool</h1>
+  <br/><br/>
+  {% if submitted %}
+
+      Your Project was Submitted Succefully!!!
+
+  {% else %}
+
+	<form action=" " method="POST">
+	  	{% csrf_token %}
+
+	  	{{ form.as_p }}
+
+	  	<input type="submit" value="Submit" class="btn btn-secondary">
+
+	</form>
+
+   {% endif %}
+
+<br/><br/>
+
+{% else %}
+<h1>Sorry! You Must Be Logged In To View This Page...</h1>
+<a href="{% url 'login' %}">Login Here</a>
+
+  
+{% endif %}
+<h6>copyright@2021</h6>
+{% endblock %}

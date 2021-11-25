@@ -358,3 +358,24 @@ class News(models.Model):
 	
 	def __str__(self):
 		return self.name
+
+class Collateral(models.Model):
+
+	state = models.CharField(max_length=200, blank=True, null=True)
+	city = models.CharField(max_length=200, blank=True, null=True)
+	ministry = models.CharField(max_length=200, blank=True, null=True)
+	pool = models.CharField(max_length=200, blank=True, null=True)
+	amount = models.CharField(max_length=200, blank=True, null=True)
+	
+
+
+	def __str__(self):
+		return self.state
+
+
+class Gov(models.Model):
+	name = models.CharField(max_length=200, blank=True, null=True)
+	
+	
+	def __str__(self):
+		return self.name

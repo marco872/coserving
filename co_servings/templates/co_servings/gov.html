@@ -1,0 +1,167 @@
+{% extends 'co_servings/main.html' %}
+
+
+	{% load static %}
+
+<style type="text/css">
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+.button1 {border-radius: 2px;}
+.button2 {border-radius: 4px;}
+.button3 {border-radius: 8px;}
+.button4 {border-radius: 12px;}
+.button5 {border-radius: 50%;}
+
+
+{% block content %}
+
+
+		
+<h5>Collaterals:</h5>
+
+			
+			
+
+	<div class="container">
+	<hr>
+
+	  	<div class="row">
+
+	  		<div class="col" style="color:blue; text-transform:uppercase;">
+
+				<h5 style="color:blue; text-transform:uppercase;">State:</h5>
+				<br>
+			
+				
+				{% for item in list %}
+			
+				
+					<tr>
+						<td>{{item.state}}</td>
+						
+					</tr>
+					<br>
+					
+					<hr>
+					
+
+					
+				{% endfor %}
+
+			</div>
+
+
+
+	  		<div class="col" style="text-transform:lowercase;">
+				<h5>city:</h5>
+				<br>
+				
+				{% for item in list %}
+				<tr>
+					<td>{{item.city}}</td>
+				</tr>
+			
+				<br>
+				<hr>
+				
+				{% endfor %}
+
+			</div>
+		
+
+			<div class="col" style=" text-transform:lowercase;">
+			   	<h5>Ministry:</h5>
+			   	<br>
+			  
+			   	{% for item in list %}
+			   	<tr>
+					<td>{{item.ministry}}</td>
+				</tr>
+				
+				<br>
+				<hr>
+				
+				{% endfor %}
+
+				
+
+			</div>
+			
+
+			<div class="col" style="color:orange; text-transform:uppercase;">
+			   	<h5 style="color:orange;">pool:</h5>
+			   	<br>
+			
+			   	{% for item in list %}
+			   	<tr>
+					<td>{{item.pool}}</td>
+				</tr>
+			
+				<br>
+				<hr>
+				
+				{% endfor %}
+
+				
+
+			</div>
+
+
+			<div class="col" style="text-transform:lowercase;">
+			   	<h5>amount:</h5>
+			   	<br>
+			   
+			   	{% for item in list %}
+				<tr>
+					<td>{{item.amount}}</td>
+				</tr>
+				
+				<br>
+				<hr>
+				
+				{% endfor %}
+
+				
+				
+
+			</div>
+			
+
+			
+			
+
+			
+
+
+			
+	   	</div>
+	<hr>
+	</div>
+
+
+	<br />
+	<br />
+
+
+	 <br />
+	 <br />
+	 <br />
+
+	 		
+	  	
+
+
+
+
+
+{% endblock content %}

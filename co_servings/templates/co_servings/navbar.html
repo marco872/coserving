@@ -80,18 +80,28 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="{% url 'venue' %}">Add-Projects</a>
           <a class="dropdown-item" href="{% url 'liquidity' %}">Add-Liquidity</a>
+          <a class="dropdown-item" href="{% url 'collateral' %}">Add-Collateral</a>
         </div>
       </li>
 
-      
+
+
 
       <li class="nav-item active">
-        <a class="nav-link" href="{% url 'projects' %}">1-Projects</a>
+        <a class="nav-link" href="{% url 'gov' %}">1.1-Collaterals</a>
+
+
+      </li>
+
+       <li class="nav-item active">
+        <a class="nav-link" href="{% url 'liquiditypools' %}">1.2-Liquidity Pools</a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'projects' %}">1.3-Projects</a>
       </li>
       
-       <li class="nav-item active">
-        <a class="nav-link" href="{% url 'liquiditypools' %}">1-Liquidity Pools</a>
-      </li>
+       
      
 
       <li class="nav-item dropdown">

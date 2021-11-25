@@ -6,7 +6,7 @@ from django.http import HttpResponseRedirect
 
 from .models import *
 
-from .forms import VenueForm, LiquidityForm
+from .forms import VenueForm, LiquidityForm, CollateralForm
 
 # Create your views here.
 
@@ -216,3 +216,32 @@ def report(request):
 
 def news(request):
 	return render(request, 'co_servings/news.html')
+
+
+
+
+
+def collateral(request):
+	submitted = False
+	form = CollateralForm()
+	if request.method == "POST":
+		form = CollateralForm(request.POST)
+		if form.is_valid():
+			form.save()
+			return HttpResponseRedirect('/collateral?submitted=True')
+
+	else:
+		form = CollateralForm()
+		if 'submitted' in request.GET:
+			submitted = True
+
+		return render(request, 'co_servings/collateral.html', {'form':form, 'submitted':submitted })
+
+
+
+def gov(request):
+	collaterals = Collateral.objects.all()
+	
+
+	context = {'list': collaterals }
+	return render(request, 'co_servings/gov.html',context )
