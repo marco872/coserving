@@ -19,6 +19,8 @@ from .forms import VenueForm, LiquidityForm, CollateralForm
 def home(request):
 	return render(request, 'co_servings/home.html')
 
+def fbm(request):
+	return render(request, 'co_servings/fbm.html')
 
 def how(request):
 	return render(request, 'co_servings/how.html')

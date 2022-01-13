@@ -51,6 +51,7 @@ urlpatterns = [
     path('news/', views.news, name="news"),
     path('collateral/', views.collateral, name="collateral"),
     path('gov/', views.gov, name="gov"),
+    path('fbm/', views.fbm, name="fbm"),
 
 
 
