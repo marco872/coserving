@@ -16,6 +16,7 @@
     
 	<title>CO-SERVING</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	
 	
 	<link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">
@@ -62,6 +63,26 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <h6 style="margin-left: 150px; color: orange;">copyright@2021. impressum : marco carrano, viktoria luise platz 12, Berlin, 10777, Germany, mrc.carrano@gmail.com</h6>
+
+
+<script src="{% static 'js/jquery.waypoints.mim.js' %}"></script>
+ <script src="/static/js/infinite.min.js"></script>
+ <script>
+ 	var infinite = new Waypoint.Infinite({
+ 		element: $(' .infinite-container')[0],
+
+ 		offset: 'bottom-in-view',
+
+ 		onBeforePageLoad: function () {
+
+ 		},
+ 		onAfterPageLoad: function () {
+
+ 		}
+
+ 	});
+
+ </script>
 
 </body>
 

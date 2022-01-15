@@ -59,7 +59,7 @@ h6 {
 
 <br>
 		
-			 		<h4 style="margin-left: 450px ;margin-top: 25px; margin-top: -20px;"><strong> Co-Serving Platform  is a Real Estate  DeFi of inclusion.</h4> <h6 style="margin-left: 450px; color:red; margin-top: 10px; "> A DAE ( Decentralized Autonomous Enterprise ) that makes the economy work best because it works for everyone:</h6> <br><h4 style="margin-left: 450px ;margin-top: 25px; margin-top: -20px;"><strong>Government, Investors, Property Owners, Tenants. </strong></h4> 
+			 		<h4 style="margin-left: 450px ;margin-top: 25px; margin-top: -20px;"><strong> Co-Serving Platform  is a Real Estate  DeFi of inclusion.</h4> <h6 style="margin-left: 450px; color:red; margin-top: 10px; "> A DAE ( Decentralized Autonomous Enterprise ) that makes the economy work best because it works for everyone:</h6> <br><h4 style="margin-left: 450px ;margin-top: 25px; margin-top: -20px;"><strong>Governments, Investors, Property Owners, Tenants. </strong></h4> 
 			 		<br>  
 			 		<br> 
 					
@@ -91,27 +91,7 @@ h6 {
 
 
 
-   <div class="container" style="margin-left: : 100px" >
   
-
-   				<a href="{% url 'token' %}">
-                    
-                  <button class="button button4" style="background-color:orange; color:white; margin-left: 150px;"><strong><em>Tenant</em></strong>  click here  to find the apartment you deserve</button>    
-
-                </a> 
-
-                <a href="{% url 'guest' %}">
-                    
-                  <button class="button button4" style="background-color:blue; color:white;  margin-left: 20px;"><strong><em>Guest</em></strong> click here  for your best accommodation in town</button>    
-
-                </a> 
-
-                <a href="{% url 'trading' %}">
-                    
-                  <button class="button button4" style="background-color:black; color:black; margin-left: 350px;"><strong><em>Real Estate Exchange</em></strong> click here  to projects trading desk
-
-                </a> 
-</div>
 
 
 
@@ -127,15 +107,156 @@ h6 {
    <a href="{% url 'fbm' %}"> 
    	<button class="button button4" style="background-color:darkblue; color:white; margin-left: 150px;">  Click here for FBMtoken (TIPI)</button>
    	</a>
-         
+   <br>
+    <br>
+     <br>
+ 
+ <script src="{% static 'js/jquery.waypoints.mim.js' %}"></script>
+ <script src="/static/js/infinite.min.js"></script>
+ <script>
+ 	var infinite = new Waypoint.Infinite({
+ 		element: $(' .infinite-container')[0],
 
- 
- 
+ 		offset: 'bottom-in-view',
+
+ 		onBeforePageLoad: function () {
+
+ 		},
+ 		onAfterPageLoad: function () {
+
+ 		}
+
+ 	});
+
+ </script>
+  
+<body class="bg-image"
+		style="background-image: url('/static/images/marco2.jpg');
+		background-repeat: no-repeat;
+		background-size:100%;
+		color:darkgrey;
+		height:550px;">
+
+
+<hr>
+
+<h6 style="margin-left: 0px;color:orange"><strong>Tenants' Space</strong></h6>
+
+<br>
+
+	<div class="container">
+			<h4 style="margin-top:-10px; color: black;"><strong>Go to the groundbreaking Real Estate program online:</strong>
+</h4>
+      <h4 style="margin-top:-10px; color: orange;"> Tenants render services for User's contracts in exchange of up to 90% rent reduction. 
+</h4>
+															
+	</div>
+
+  <br>
+
+   <div class="container" style="margin-left: : 100px" >
   
 
+   				<a href="{% url 'token' %}">
+                    
+                  <button class="button button4" style="background-color:orange; color:white; margin-left: 150px;"><strong><em>Tenant</em></strong>  click here  to find the apartment you deserve</button>    
+
+                </a> 
+
+    </div>
+
+ 
+
+
+<br>
+<br>
+
+
+ <img src="{% static 'images/tenant.jpg' %}"
+            style=";
+            width:700px;
+            height:400px;
+            border: solid 3px #ccc"/>
+
+<hr>
+<h6 style="margin-left: 0px; color:blue"><strong>Guests' Space</strong></h6>
+
+
+<br>
 
 
 
+
+<div class="container">
+      <h4 style="margin-top:-10px; color: black;"><strong>Go to the most transparent  Real Estate booking program online:
+</h4>
+      <h4 style="margin-top:-10px; color: blue;"> Users know clearly what they pay for and whom their money go to.
+</h4>
+                              
+  </div>
+  <div class="container" style="margin-left: : 100px" >
+  
+
+   				<br>
+
+                <a href="{% url 'guest' %}">
+                    
+                  <button class="button button4" style="background-color:blue; color:white;  margin-left: 150px;"><strong><em>Guest</em></strong> click here  for your best accommodation in town</button>    
+
+                </a> 
+
+                
+</div>
+ <br>
+ <br>
+
+ <img src="{% static 'images/flex.jpg' %}"
+            style=";
+            width:900px;
+            height:500px;
+            border: solid 3px #ccc"/>
+
+
+<hr>
+
+
+
+
+
+<h6 style="margin-left: 0px; color:black"><strong>Investors' Space</strong></h6>
+
+<br>
+
+<div class="container">
+      <h4 style="margin-top:-10px; color: black;"><strong>Go to the DeFi  Real Estate platform online:
+</h4>
+      <h4 style="margin-top:-10px; color: black;"> Investors use Smart Contracts to eliminate nonmarketed transaction costs.
+</h4>
+<br>
+        
+
+         <div class="container" style="margin-left: : 100px" >
+  
+
+   				
+                <a href="{% url 'trading' %}">
+                    
+                  <button class="button button4" style="background-color:black; color:black; margin-left: 150px;"><strong><em>Real Estate Exchange</em></strong> click here  to projects trading desk
+
+                </a> 
+</div>  
+
+<br>                    
+ 
+
+<img src="{% static 'images/TOKEN VALUE.jpg' %}"
+            style="
+            width:700px;
+            height:500px;
+            border: solid 10px #ccc"/>
+      
+
+<br>
 
 
 
