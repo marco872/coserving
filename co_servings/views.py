@@ -219,6 +219,10 @@ def report(request):
 def news(request):
 	return render(request, 'co_servings/news.html')
 
+def owner(request):
+	return render(request, 'co_servings/owner.html')
+
+
 
 
 

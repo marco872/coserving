@@ -59,7 +59,7 @@ h6 {
 
 <br>
 		
-			 		<h5 style="margin-left: 450px ;margin-top: 25px; margin-top: -20px;"><strong> Co-Serving Platform  is an automated Real Estate  developer.</h5> <h6 style="margin-left: 450px; color:red; margin-top: 10px; "> It makes the economy work best because it works equitably for all the people and companies involved in development activities:</h6> <br><h5 style="margin-left: 450px ;margin-top: 25px; margin-top: -20px;"><strong>Governments, Investors, Property Owners, Tenants, Guests</strong> <em>(Short Term Renters).</em></h5> 
+			 		<h5 style="margin-left: 450px ;margin-top: 25px; margin-top: -20px;"><strong>Co-Serving Platform  is an automated Real Estate  developer.</h5> <h6 style="margin-left: 450px; color:red; margin-top: 10px; "> It makes the economy work best because it works equitably for all the people and companies involved in development activities:</h6> <br><h5 style="margin-left: 450px ;margin-top: 25px; margin-top: -20px;"><strong> Property Owners, Tenants, Guests</strong> <em>(Short Term Renters),</em><strong>Governments/Investors.</strong></h5> 
 			 		<br>  
 			 		<br> 
 					
@@ -72,6 +72,12 @@ h6 {
 
 							
 <div class="container" style="margin-left: : 100px" >
+
+				<a href="{% url 'owner' %}">
+                    
+                  <button class="button button4" style="background-color:red; color:white; margin-left: 150px;"><strong><em>Property owner</em></strong>  click here  to upload  your property</button>    
+
+                </a> 
   
 
    				<a href="{% url 'token' %}">
@@ -155,6 +161,65 @@ h6 {
 		background-size:100%;
 		color:darkgrey;
 		height:550px;">
+<hr>
+
+<br>
+<br>
+
+<h6 style="margin-left: 0px;color:red"><strong><u>Owner' Space</u></strong></h6>
+
+<br>
+
+	<div class="container">
+			<h4 style="margin-top:-10px; color: black;"><strong>Go to property owners working area:</strong>
+</h4>
+      <h4 style="margin-top:-10px; color: red;">Owners upload property information with desing-build projects.
+</h4>
+															
+	</div>
+
+  <br>
+
+   <div class="container" style="margin-left: : 100px">
+  
+
+   				<a href="{% url 'owner' %}">
+                    
+                  <button class="button button4" style="background-color:red; color:white; margin-left: 150px;"><strong><em>Owner</em></strong>  click here  to upload your property and project.</button>    
+
+                </a> 
+
+    </div>
+
+
+    <br>
+
+ <div class="container">
+
+    <div class="row">
+
+
+        <div class="col">
+
+        <h5 style="color:red;"><u>Upload property:</u></h5>
+       
+        <p style="color:black;"><em><strong>Owner Commits her property to a development.</strong></em></p>
+      
+
+       
+
+        <h5 style="color:red;"><u>Building Selection:</u></h5>
+      
+        <p style="color:black;"><em><strong>Owner Selects a design-build project from catalogue in  menu to develop the property.</stong></em></p>
+        </div>
+   
+  </div>
+
+
+<br>
+<br>
+
+
 
 
 <hr>
@@ -162,7 +227,7 @@ h6 {
 <br>
 <br>
 
-<h6 style="margin-left: 0px;color:orange"><strong>Tenants' Space</strong></h6>
+<h6 style="margin-left: 0px;color:orange"><strong><u>Tenants' Space<u></strong><u></h6>
 
 <br>
 
@@ -200,8 +265,36 @@ h6 {
             height:400px;
             border: solid 3px #ccc"/>
 
+ <br>
+
+
+   <div class="container">
+
+    <div class="row">
+
+
+        <div class="col">
+
+        <h5 style="color:orange;">Contract:</h5>
+       
+        <p style="color:black;"><em><strong>Tenant reviews long term contract.</strong></em></p>
+      
+
+       
+
+        <h5 style="color:orange;">Smart Contract:</h5>
+       
+        <p style="color:black;"><em><strong>Tenant signs and submits Smart Contart to blockchain.</stong></em></p>
+        </div>
+   
+  </div>
+
 <hr>
-<h6 style="margin-left: 0px; color:blue"><strong>Guests' Space</strong></h6>
+
+<br>
+<br>
+
+<h6 style="margin-left: 0px; color:blue"><strong><u>Guests' Space</u></strong></h6>
 
 
 <br>
@@ -238,14 +331,39 @@ h6 {
             height:500px;
             border: solid 3px #ccc"/>
 
+  <br>
+
+  <div class="container">
+
+    <div class="row">
+
+
+        <div class="col">
+
+        <h5 style="color:blue;">Contract:</h5>
+    
+        <p style="color:black;"><em><strong>Guest reviews short term contract.</strong></em></p>
+      
+
+       
+
+        <h5 style="color:blue;">Smart Contract:</h5>
+       
+        <p style="color:black;"><em><strong>Guest signs and submits Smart Contart to blockchain</stong></em></p>
+        </div>
+   
+  </div>
+  <br>
+
 
 <hr>
 
 
+<br>
+<br>
 
 
-
-<h6 style="margin-left: 0px; color:black"><strong>Governments/Investors' Space</strong></h6>
+<h6 style="margin-left: 0px; color:black"><strong>Governments/Investors' Space<u></strong></u></h6>
 
 <br>
 
@@ -276,7 +394,26 @@ h6 {
             height:500px;
             border: solid 10px #ccc"/>
       
+ <div class="container">
 
+    <div class="row">
+
+
+        <div class="col">
+
+        <h5 style="color:black;">Upload Liquidity Pool:</h5>
+       
+        <p style="color:black;"><em><strong>Investor provids funds to Liquidity Pool.</strong></em></p>
+      
+
+       
+
+        <h5 style="color:black;">Upload Collateral:</h5>
+       
+        <p style="color:black;"><em><strong>Government provide funds to collateralize investor's capital.</stong></em></p>
+        </div>
+   
+  </div>
 <br>
 
 
