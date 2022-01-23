@@ -53,6 +53,13 @@ urlpatterns = [
     path('gov/', views.gov, name="gov"),
     path('fbm/', views.fbm, name="fbm"),
     path('owner/', views.owner, name="owner"),
+    path('gin/', views.gin, name="gin"),
+    path('pro/', views.pro, name="pro"),
+    path('ten/', views.ten, name="ten"),
+    path('sub/', views.sub, name="sub"),
+    path('impressum/', views.impressum, name="impressum"),
+
+
 
 
 

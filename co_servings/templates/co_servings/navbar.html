@@ -6,13 +6,13 @@
     <button
       class="button button4"
       style="
-      background-color: black;
+      background-color: #c1a292;
         color: white;
         font-size: large;
         font-style: oblique;
         font-weight: 500;">
 
-      Co-Serving
+      co-serving
     </button>
   </a>
   <button
@@ -42,7 +42,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="{% url 'development1' %}">Modus Operandi</a>
-          <a class="dropdown-item" href="{% url 'white' %}">Co-Serving Action</a>
+          <a class="dropdown-item" href="{% url 'white' %}">co-serving Action</a>
           <a class="dropdown-item" href="{% url 'how' %}">Liquidity-Pools</a>
         </div>
       </li>
@@ -135,6 +135,12 @@
         <a class="nav-link" href="{% url 'login' %}">Login</a>
       </li>
       {% endif %}
+
+     <li class="nav-item active">
+        <a class="nav-link" href="{% url 'impressum' %}">Impressum</a>
+
+
+      </li>
     </ul>
   </div>
 

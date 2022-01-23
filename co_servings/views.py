@@ -222,10 +222,19 @@ def news(request):
 def owner(request):
 	return render(request, 'co_servings/owner.html')
 
+def gin(request):
+	return render(request, 'co_servings/gin.html')
 
+def pro(request):
+	return render(request, 'co_servings/pro.html')
 
+def ten(request):
+	return render(request, 'co_servings/ten.html')
 
-
+def sub(request):
+	return render(request, 'co_servings/sub.html')
+def impressum(request):
+	return render(request, 'co_servings/impressum.html')
 
 def collateral(request):
 	submitted = False
