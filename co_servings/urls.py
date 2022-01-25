@@ -58,7 +58,7 @@ urlpatterns = [
     path('ten/', views.ten, name="ten"),
     path('sub/', views.sub, name="sub"),
     path('impressum/', views.impressum, name="impressum"),
-
+    path('vigna/', views.vigna, name="vigna"),
 
 
 

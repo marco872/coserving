@@ -235,6 +235,10 @@ def sub(request):
 	return render(request, 'co_servings/sub.html')
 def impressum(request):
 	return render(request, 'co_servings/impressum.html')
+def vigna(request):
+	return render(request, 'co_servings/vigna.html')
+
+
 
 def collateral(request):
 	submitted = False
