@@ -27,3 +27,20 @@
 	}
 
 
+ @media (max-width: 300px) {
+                                             .navbar {
+                                                 height: 100px;
+                                             }
+                                             .navbar.flex {
+                                                 flex-direction: column;
+                                             }
+                                             .navbar ul {
+                                                 padding: 10px;
+                                                 background-color: rgba(0, 0, 0, 0.1);}
+                                             .h1 {
+                                             	height :18px;
+                                             }
+}
+
+
+
