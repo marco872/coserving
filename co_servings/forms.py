@@ -6,7 +6,7 @@ from .models import Venue, Liquidity, Collateral
 class VenueForm(ModelForm):
 	class Meta:
 		model = Venue
-		fields = ('owner', 'property_price', 'location', 'name', 'category', 'building', 'total_project_price')
+		fields = ('owner', 'property_price', 'location', 'name', 'category', 'building', 'total_project_price', 'temp', 'temp_cost', 'apts')
 
 		widgets = {
 			'owner': forms.TextInput(attrs={'class':'form-control'}),
@@ -17,6 +17,9 @@ class VenueForm(ModelForm):
 			'name': forms.TextInput(attrs={'class':'form-control'}),
 			'building': forms.TextInput(attrs={'class':'form-control'}),
 			'total_project_price': forms.TextInput(attrs={'class':'form-control'}),
+			'temp': forms.TextInput(attrs={'class':'form-control'}),
+			'total_cost': forms.TextInput(attrs={'class':'form-control'}),
+			'apts': forms.TextInput(attrs={'class':'form-control'}),
 
 		}	
 		

@@ -140,34 +140,7 @@
 			</div>
 			
 
-			<div class="col" style="color:orange; text-transform:uppercase;">
-			   	<h5 style="color:orange;">Name:</h5>
-			   	<br>
 			
-			   	{% for item in list %}
-			   	<tr>
-					<td>{{item.name}}</td>
-				</tr>
-			
-				<br>
-				<hr>
-				
-				{% endfor %}
-
-				{% for i in value %} 
-				
-					<tr>
-						
-						<td>{{i.name}}</td>
-					</tr>
-					
-					<br>
-					<hr>
-					
-					{% endfor %}
-				
-
-			</div>
 
 
 			<div class="col" style="text-transform:lowercase;">
@@ -229,9 +202,28 @@
 
 			</div>
 			
+			<div class="col" style="text-transform:lowercase;">
+			   	<h5>Temp:</h5>
+			   	<br>
+			   
+			   
 
+				{% for i in value %} 
+				
+					<tr>
+						
+						<td>{{i.temp}}</td>
+					</tr>
+					
+					<br>
+					<hr>
+					
+					{% endfor %}
+				
+
+			</div>
 			
-
+			
 
 			
 	   	</div>
