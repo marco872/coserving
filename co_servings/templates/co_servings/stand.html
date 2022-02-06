@@ -1,52 +1,70 @@
 {% extends 'co_servings/main.html' %}
 {% load static %}
 {% block content %}
+
 <style type="text/css">
-.button {
-  background-color: #04AA6D;
-  border: none;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-}
-
-.button1 {border-radius: 2px;}
-.button2 {border-radius: 4px;}
-.button3 {border-radius: 8px;}
-.button4 {border-radius: 12px;}
-.button5 {border-radius: 50%;}
-
-
-<div class="container">
-	
-
-	 <div class="row">
-
-	  	<div class="col">
-
-		<h3 style="color:green;">fbm-6/units</h3><h5 style="color:blue;"> "Entrance Level :"</h5> <h5>  1 unit </h5>
 
 
 
-          <img src="{% static 'images/entrance.PNG' %}"
+
+h5 {
+    color: gray;
+  }
+
+</style>
+
+
+
+  <h1 style="color:red;">Temp. Structure Types </h1>
+
+  <hr>
+
+  <h2 style="color:green;">Flex Office Model </h2>
+
+  <hr>
+
+ 
+          <h3 style="color:green;">fom-1</h3><h5 style="color:blue;"> "basic module :"</h5> <h5>   cost per unit all inclusive € 3500 </h5>
+
+
+
+          <img src="{% static 'images/temp.1.jpg' %}"
             style="object-fit:contain;
-            width:200px;
+            width:400px;
             height:300px;
             border: solid 3px #ccc"/>
 
+                
+                
+          <br>
+          <br>
 
-        <br>
-        <br>
+         
 
-    	</div>
-    </div>
-</div>
+    <hr> 
+
+    <h2 style="color:green;">Flex Gastro Model </h2>
+
+  <hr>
 
 
-<hr>
+     <h3 style="color:green;">fom-2</h3><h5 style="color:blue;"> "basic module :"</h5> <h5>   cost per unit all inclusive € 11500 </h5>
+
+
+
+          <img src="{% static 'images/temp.2.jpg' %}"
+            style="object-fit:contain;
+            width:400px;
+            height:300px;
+            border: solid 3px #ccc"/>
+
+                
+                
+          <br>
+          <br>
+
+         
+
+    <hr> 
 
 {% endblock %}
