@@ -59,7 +59,7 @@ urlpatterns = [
     path('sub/', views.sub, name="sub"),
     path('impressum/', views.impressum, name="impressum"),
     path('vigna/', views.vigna, name="vigna"),
-
+    path('apts/', views.apts, name="apts"),
 
 
 

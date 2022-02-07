@@ -314,20 +314,32 @@
           <br>
          
           {% for i in value %}
-        <tr>
-          <td>{{i.temp_cost }}</td>
+        <tr >
+          <td >{{i.temp_cost }}</td> 
+
+          <br>
+
+          <a href="{% url 'apts' %}">
+                    
+                  <button class="button button4" style="background-color:blue; color:white; margin-left: 100px; margin-top: -20px; padding:0px; font-size: xx-small;">apts </button>    
+
+                </a> 
+
+
         </tr>
       
-        <br>
-        <br>
+     
+       
         <hr>
         {% endfor %}
       </div>
       
+                
+                 
 
+      </div>
 
       
-      </div>
   <hr>
   </div>
 
@@ -344,7 +356,6 @@
       
 
 
-<h6>copyright@2021. impressum : marco carrano, viktoria luise platz 12, Berlin, 10777, Germany, mrc.carrano@gmail.com</h6>
 
 
 {% endblock content %}

@@ -238,7 +238,8 @@ def impressum(request):
 def vigna(request):
 	return render(request, 'co_servings/vigna.html')
 
-
+def apts(request):
+	return render(request, 'co_servings/apts.html')
 
 def collateral(request):
 	submitted = False
