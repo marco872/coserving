@@ -241,6 +241,8 @@ def vigna(request):
 def apts(request):
 	return render(request, 'co_servings/apts.html')
 
+	
+
 def collateral(request):
 	submitted = False
 	form = CollateralForm()
