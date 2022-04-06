@@ -1,6 +1,6 @@
 {% load static %}
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-xlg navbar-light bg-brown">
   <a href="{% url 'home' %}">
     
     <button
@@ -9,10 +9,13 @@
       background-color: #c1a292;
         color: white;
         font-size: large;
-        font-style: oblique;
-        font-weight: 500;">
+        font-style: normal;
+        font-weight: 500;
+        margin-left: 10px; 
+        padding: 30px;  
+        margin-bottom: 30px;">
 
-      co-serving
+      Co-Serving
     </button>
   </a>
   <button
@@ -45,7 +48,8 @@
           <a class="dropdown-item" href="{% url 'white' %}">Co-serving Action</a>
           <a class="dropdown-item" href="{% url 'how' %}">Blockchain</a>
         </div>
-      </li>
+      </li> 
+
 
       <li class="nav-item dropdown">
         <a
