@@ -6,6 +6,46 @@
 
 {% block content %}
 
+<style type="text/css">
+.button {
+
+  margin: 4px 2px;
+}
+
+.button1 {border-radius: 2px;}
+.button2 {border-radius: 4px;}
+.button3 {border-radius: 8px;}
+.button4 {border-radius: 12px;}
+.button5 {border-radius: 50%;}
+
+
+}
+
+
+
+h6 {
+    color:black;
+  }
+
+
+  h1 {
+    color: black;
+
+  }
+ 
+  h4, h5, td {
+    color: black;
+  }
+ 
+
+
+ 
+
+
+  
+</style>
+
+
 
 
 
@@ -15,13 +55,14 @@
 
 	<div class="col">
 
-				<h3 style="color:orange; margin-left: 350px"> BLOCKCHAIN</h3> 
+				<h3 style="color:orange; margin-left: 350px; margin-top: -50px;"> BLOCKCHAIN</h3> 
 	  			
 	  			<hr>
 			
 	  		
 			</div>
  
+	<div class="container">
 	
 
 	  	<div class="row">
@@ -29,62 +70,50 @@
 
 	  		<div class="col">
 
+				<h5 style="color:blue;">  GOVERNMENTS:</h5>
+				<hr>
+				<h4> use <u style="color:orange;">  smart contracts</u> to provide collateral to Liquidity Pool 
+	  			 </h4> </em>
+				
 
-	  			<h2 style="color:grey;">Alfa</h2>
-	  			<h4> Governaments use <u style="color:orange;">  smart contracts</u> to provide collateral to Liquidity Pool 
-	  			 </h4>
-	  			
-	  		
-	 
-			
-	  			
+				
 			</div>
-
-	  			
-
 
 	  		<div class="col">
 
-	  	
-
-	  			<h2 style="color:grey;">Beta</h2>
-	  			<h4>Investors use <u style="color:orange;">  smart contracts </u> to provide  capital to Liquidity Pool
+				<h5 style="color:blue;">INVESTORS:</h5>
+				<hr>
+				<h4> use <u style="color:orange;">  smart contracts </u> to provide  capital to Liquidity Pool
 	  			
 	  			</h4>  
-	  			
-	  			<br>
-	  		
-	  			
-	  			
-	  			
-			
-	  			
+				
+				
 			</div>
 
-
 			
-
-	
-	
 
 			<div class="col">
 
-	  			<h2 style="color:grey;">Gamma</h2>
-	  			<h4>Project owners use <u style="color:orange;"> smart contracts</u> to borrow construction capital from Liquidity Pool   </h4>
-	  			
-	  			<br>
-	  		
-	  			
+				<h5 style="color:blue;"> PROPERTY OWNERS:</h5>
+				<hr>
+				<h4> use <u style="color:orange;"> smart contracts</u> to borrow construction capital from Liquidity Pool   </h4>
+			
 			</div>
 
 			<div class="col">
 
-	  			<h2 style="color:grey;">Delta</h2>
-	  			<h4>Tenants use <u style="color:orange;"> smart contractsc</u> to rent appartments from project financed by Liquidity Pool and to sublet flex rooms to guests. </h4>
-	  			<br>
-	  		
-	  			
+				<h5 style="color:blue;">TENANTS/GUESTS:</h5>
+				<hr>
+				<h4>use <u style="color:orange;"> smart contractsc</u> to rent apartments  financed by Liquidity Pool and to sublet flex rooms to Guests. </h4>
+
+			
+
+				
 			</div>
+			
+			
+
+			
 
 
 			
@@ -93,7 +122,15 @@
 		</div>
 </div>
 
+<br>
 
+<a href="{% url 'white' %}">
+                    
+                  <button class="button button4" style="background-color:#795548; color:white; margin-left: 500px; padding-right: 10px;  margin-bottom: 30px;"> Platform</button> 
 
+<br>
+<a href="{% url 'development1' %}">
+                    
+                  <button class="button button4" style="background-color:#795548; color:white; margin-left: 500px; padding-right: 10px;  margin-bottom: 30px;">  Co-Serving</button> 
 
 {% endblock %}
