@@ -28,4 +28,14 @@
 
 
 
+<style>
+  @media screen and (max-width: 1000px) { 
+  	div{ font-size: x-small; 
+  	 padding : 0px; color: white;}
+  }
+ 
 
+
+
+
+  </style>
