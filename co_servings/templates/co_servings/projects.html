@@ -237,13 +237,28 @@ h6 {
 					<br>
 					<hr>
 					
-					{% endfor %}
+					{% endfor %}	
 				
 
 			</div>
-			
-			
 
+			<div class="col" style="text-transform:lowercase; color: brown;">
+			   	<h5 style="color: brown;">Rented:</h5>
+			
+				<br>
+			
+				
+				{% for i in value %}
+			
+				
+					<tr>
+						<td>{{i.apts}}</td>
+						
+					</tr>
+					<br>
+					<hr>
+			
+					{% endfor %}
 			
 	   	</div>
 	<hr>

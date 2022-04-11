@@ -1,5 +1,17 @@
 {% load static %}
+<style>
+ul {
+  
+  margin-top: -25px;
+  margin-left: 70px;
+ 
+ 
+  
+  
+}
 
+
+</style>
 
 <nav class="navbar navbar-expand-sm navbar-light bg-brown ">
 
@@ -67,7 +79,7 @@
           aria-haspopup="true"
           aria-expanded="false"
         >
-          Catalogue
+          <em>Catalogue</em>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="{% url 'buildings' %}">Building Types</a>
@@ -85,7 +97,7 @@
           aria-haspopup="true"
           aria-expanded="false"
         >
-          Uploads
+          <strong>Uploads</strong>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="{% url 'venue' %}">Add-Projects</a>
@@ -124,11 +136,13 @@
           aria-haspopup="true"
           aria-expanded="false"
         >
-          Activities
+         
+         <strong>Actions</strong>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{% url 'development' %}">3-Developments</a>
-          <a class="dropdown-item" href="{% url 'rental' %}">4-Overview</a>
+          <a class="dropdown-item" href="{% url 'development' %}">Developments</a>
+          <a class="dropdown-item" href="{% url 'trading' %}">Commitments</a>
+          <a class="dropdown-item" href="{% url 'guest' %}">Smart Contracts</a>
         </div>
       </li>
 

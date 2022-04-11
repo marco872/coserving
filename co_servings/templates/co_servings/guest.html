@@ -49,7 +49,7 @@ h5 {
 
 
 
-<body style="background-color: #273571;">
+<body style="background-color: yellow;">
 
 {% load static %}
 
@@ -57,133 +57,6 @@ h5 {
 
 
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-
-       <a href="{% url 'guest' %}">
-                    
-                  <button class="button button4" style="color:blue">Users</button>    
-
-                </a> 
-
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         Qualifications
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{% url 'information2' %}">Membership</a>
-          <a class="dropdown-item" href="{% url 'guestrules' %}">User Rules</a>
-          <a class="dropdown-item" href="{% url 'vaccineprotocol2' %}">Vaccine Protocol</a>
-          
-        </div>
-
-      </li>
-      
-
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      
-        Benefits
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" href="{% url 'costtrasparency' %}">Cost-Transparency</a>
-        <a class="dropdown-item" href="{% url 'tokenprogram2' %}">Token program</a>
-        
-        </div>
-      </li>
-
-     
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
-        Downloads
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{% url 'venue' %}">Short Term Contracts</a>
-          <a class="dropdown-item" href="{% url 'liquidity' %}">Smart Contract</a>
-          
-        </div>
-      </li> 
-
-
-
-     
-      <li class="nav-item active">
-        <a class="nav-link" href="{% url 'guestopportunity' %}">5-User Opportunities</a>
-      </li>
-
-      <li class="nav-item active">
-        <a class="nav-link" href="{% url 'ourcommunity2' %}">Our Community</a>
-      </li>
-
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
-      User's Booking
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{% url 'reservation' %}">Reservation</a>
-          <a class="dropdown-item" href="{% url 'payment2' %}">Payment</a>
-        </div>
-      </li>
-
-     
-
-
-      
-      {% if user.is_authenticated %}
-      <li class="nav-item active">
-        <a class="nav-link" href="{% url 'logout' %}">Logout</a>
-      </li>
-      {% else %}
-      <li class="nav-item active">
-        <a class="nav-link" href="{% url 'register_user' %}">Register</a>
-      </li>
-
-       <li class="nav-item active">
-        <a class="nav-link" href="{% url 'login' %}">Login</a>
-      </li>
-      {% endif %}
-      
-    </ul>
-
-  </div>
-</nav>
-
-<br>
-
-<div class="container">
-   <h4 style="margin-top:-10px; color: white;"><strong>Welcome to the Booking Desk of the DeFi  Real Estate platform : </strong></h4>
-        <br>
-     
-      <h5 style="margin-left: 30px; color: white;">* Users read CO-SERVING conditions in  "Qualifications" of Users menu.</h5>
-      <h5 style="margin-left: 30px; color: white;">* Users select project  in  "User Opportunities" of Users menu.</h5>
-      
- 
-
- 
-
-
-
-       <h5 style="margin-left: 30px; color: white;">* Users upload Smart Contract in "Add-Liquidity" in "Uploads" main menu. </h5>
-
-
-      
-      
-      <h5 style="margin-left: 30px; color: white;">* Users follow projects developments in main menu "Activities".</h5>
-     
-      <h5 style="margin-left: 30px; color: white;">* User accomodation administration  in Users menu " User's Activities".</h5>
-                              
-  </div>
-  <br>
-
-
-
-<br>
-
-<br>
 
 
 
