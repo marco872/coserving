@@ -100,9 +100,10 @@ ul {
           <strong>Uploads</strong>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{% url 'venue' %}">Add-Projects</a>
-          <a class="dropdown-item" href="{% url 'liquidity' %}">Add-Liquidity</a>
+
           <a class="dropdown-item" href="{% url 'collateral' %}">Add-Collateral</a>
+          <a class="dropdown-item" href="{% url 'liquidity' %}">Add-Liquidity</a>
+          <a class="dropdown-item" href="{% url 'venue' %}">Add-Projects</a>
         </div>
       </li>
 
@@ -123,7 +124,9 @@ ul {
         <a class="nav-link" href="{% url 'projects' %}"><u>Projects</u></a>
       </li>
       
-       
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'development' %}"><u>Developments</u></a>
+      </li>
      
 
       <li class="nav-item dropdown">
@@ -140,8 +143,9 @@ ul {
          <strong>Actions</strong>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{% url 'development' %}">Developments</a>
+          
           <a class="dropdown-item" href="{% url 'trading' %}">Agreements</a>
+          <a class="dropdown-item" href="{% url 'owner' %}">Commit Agreements</a>
           <a class="dropdown-item" href="{% url 'guest' %}">Smart Contracts</a>
         </div>
       </li>

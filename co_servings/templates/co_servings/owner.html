@@ -35,11 +35,11 @@ h6 {
   }
 
 
-  h1 {
+  h1{
     color: black;
   }
  
-  h4, h5, td {
+  h4, h5 {
     color: black;
   }
 
@@ -54,83 +54,117 @@ h6 {
 
 
 	
-<body style="background-color: #c0203c;">
+<h5 style="color:orange;">Commit Agreements:</h5>
+
+<br>
 
 
+  <hr>    
+      
 
-<div class="container" style="background-color:#c0203c; ">
+  <div class="container">
 
 
+      <div class="row">
 
+        <div class="col">
 
-<div class="container">
-      <h4 style="margin-top:-10px; color: white;"><strong>Welcome to  Projects Operating Desk of the DeFi  Real Estate platform : </strong></h4>
+        
+          <h5 style="color:black;">Location:</h5>
+          <br>
+        
+          {% for i in list %}
+          <tr>
+          <td>{{i.location}}</td>
+        </tr>
         <br>
-      <h5 style="margin-left: 30px; color: white;">* An Algorithm combines Liquidity Pools with Projects to finance developments.</h5>
-      <h5 style="margin-left: 30px; color: white;">* Owners borrow money using AAVA Protocol.</h5>
-          <a href="https://aave.com"
-              style="font-size: large;
-              margin-left: 250px;"
-              >click here to AAVE</a>
-<br>
-<br>
-
-      <h5 style="margin-left: 30px; color: white;">* Owners borrow money using Smart Contracts avalable to review  in "Downloads".</h5>
-
-          <a href="{% url 'trading' %}"
-              style="font-size: large;
-              margin-left: 250px;"
-              >click here to Downloads </a>
-
-<br>
-<br> 
-          
-      <h5 style="margin-left: 30px; color: white;">* Owners upload Smart Contract in "Add-Liquidity" in "Uploads" main menu. </h5>
-
+        <br>
+        <hr>
+        {% endfor %}
+      </div>
 
       
-      
-      <h5 style="margin-left: 30px; color: white;">* Owners follow projects developments in main menu "Activities".</h5>
-     
+
+      <div class="col"style="margin-left: -40px;">
   
+          <h5 style="margin-left: -40px">Agreement Govern:</h5>
+          <br>
+     
+
+    
+         
+          {% for i in list %}
+        <tr>
+          <strong><td>{{i.agreement_govern}}</td></strong>
+        </tr>
+        <br>
+        <br>
+        <hr>
+        {% endfor %}
+      </div>
+
       
-<br>
-      <h5 style="margin-left: 30px; color: Black;"> IMPORTANT NOTE: </h5>
+      <div class="col"style="margin-left: -20px;">
+          <h5 style="margin-left: -40px">Agreement Investor:</h5>
+          <br>
+         
+          {% for i in list %}
+        <tr>
+          <strong><td>{{i.agreement_investor}}</td></strong>
+        </tr>
+        <br>
+        <br>
+        <hr>
+        {% endfor %}
+      </div>
 
-      <h5 style="margin-left: 30px; color: Black;"> Financing gets released to development when "Smart Contrants Standard" (SCS) is completed. SCS is completed when all four Smart Contracts are Uploaded. (Investor, Government, Owner, Tenant) </h5>
+       <div class="col"style="margin-left: -10px;">
+          <h5 style="margin-left: -40px">Agreement Pr. Owner:</h5>
+          <br>
+         
+          {% for i in list %}
+        <tr>
+          <strong><td>{{i.agreement_property_owner}}</td></strong>
+        </tr>
+        <br>
+        <br>
+        <hr>
+        {% endfor %}
+      </div>
 
-      <br>
+       <div class="col"style="margin-left: 20px;">
+          <h5 style="margin-left: -40px">Agreement Tenant:</h5>
+          <br>
+         
+          {% for i in list %}
+        <tr>
+          <strong><td>{{i.agreement_tenant}}</td></strong>
+        </tr>
+        <br>
+        <br>
+        <hr>
+        {% endfor %}
+      </div>
 
 
-<br>
-<br>
-<br>
-<br>
-<br>
-															
-	</div>
+       
 
-  <br>
-  <br>
 
+      </div>
  
-  <br>
+  </div>
+
+
+  <br />
+  <br />
+
+
+   <br />
+   <br />
+   <br />
 
 
 
 
 
-
-
-
-
-
-
-
-
-{% endblock %}
-
-
-
-
-</body>
+{% endblock content %}

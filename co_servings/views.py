@@ -90,8 +90,9 @@ def development(request):
 	projects = Project.objects.all()
 	venue = Venue.objects.all()
 	liquidity = Liquidity.objects.all()
+	development = Development.objects.all()
 
-	context = {'list': projects, 'value': venue, 'topic': liquidity}
+	context = {'list': projects, 'value': venue, 'topic': liquidity, 'agreement':development}
 	return render(request, 'co_servings/development.html',context )
 	
 	
@@ -220,7 +221,12 @@ def news(request):
 	return render(request, 'co_servings/news.html')
 
 def owner(request):
-	return render(request, 'co_servings/owner.html')
+	owner = Owner.objects.all()
+	context = {'list': owner}
+	
+	return render(request, 'co_servings/owner.html',context)
+
+
 
 def gin(request):
 	return render(request, 'co_servings/gin.html')
@@ -267,3 +273,4 @@ def gov(request):
 
 	context = {'list': collaterals }
 	return render(request, 'co_servings/gov.html',context )
+

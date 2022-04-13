@@ -82,8 +82,8 @@ class Development(models.Model):
 	location = models.CharField(max_length=200, null=True)
 	category = models.CharField(max_length=200, null=True)
 	plp = models.CharField(max_length=200, null=True)
-	proper = models.CharField(max_length=200, null=True)
-	unit = models.CharField(max_length=200, null=True)
+	
+	
 	project = models.CharField(max_length=200, null=True)
 	projcost = models.CharField(max_length=200, null=True)
 	def __str__(self):
@@ -392,11 +392,15 @@ class Fbm(models.Model):
 
 
 class Owner(models.Model):
-	name = models.CharField(max_length=200, blank=True, null=True)
-	
+	location = models.CharField(max_length=200, blank=True, null=True)
+	agreement_govern = models.CharField(max_length=200, null=True)
+	agreement_investor = models.CharField(max_length=200, null=True)
+	agreement_property_owner = models.CharField(max_length=200, null=True)
+	agreement_tenant = models.CharField(max_length=200, null=True)
+	agreement_guest = models.CharField(max_length=200, null=True)
 	
 	def __str__(self):
-		return self.name
+		return self.location
 
 class Gin(models.Model):
 	name = models.CharField(max_length=200, blank=True, null=True)
@@ -454,3 +458,5 @@ class Apts(models.Model):
 	
 	def __str__(self):
 		return self.name
+
+
