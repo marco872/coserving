@@ -20,6 +20,8 @@ class VenueForm(ModelForm):
 			'temp': forms.TextInput(attrs={'class':'form-control'}),
 			'total_cost': forms.TextInput(attrs={'class':'form-control'}),
 			'apts': forms.TextInput(attrs={'class':'form-control'}),
+			
+
 
 		}	
 		
