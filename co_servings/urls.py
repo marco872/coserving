@@ -60,6 +60,7 @@ urlpatterns = [
     path('impressum/', views.impressum, name="impressum"),
     path('vigna/', views.vigna, name="vigna"),
     path('apts/', views.apts, name="apts"),
+    path('commit/', views.commit, name="commit"),
   
 
 

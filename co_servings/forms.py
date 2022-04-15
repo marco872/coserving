@@ -1,6 +1,6 @@
 from django import forms
 from django.forms import ModelForm
-from .models import Venue, Liquidity, Collateral 
+from .models import Venue, Liquidity, Collateral, Commit 
 
 
 class VenueForm(ModelForm):
@@ -60,7 +60,23 @@ class CollateralForm(ModelForm):
 		}	
 		
 
+class CommitForm(ModelForm):
+	class Meta:
+		model = Commit
+		fields = ('location', 'agreement_govern', 'agreement_investor', 'agreement_property_owner', 'agreement_tenant', 'agreement_guest')
 
+		widgets = {
+			'location': forms.TextInput(attrs={'class':'form-control'}),
+			'agreement_govern': forms.TextInput(attrs={'class':'form-control'}),
+			'agreement_investor': forms.TextInput(attrs={'class':'form-control'}),
+			'agreement_property_owner': forms.TextInput(attrs={'class':'form-control'}),
+			'agreement_tenant': forms.TextInput(attrs={'class':'form-control'}),
+			'agreement_guest': forms.TextInput(attrs={'class':'form-control'}),
+			
+			
+
+		}	
 
 		
 		 
+

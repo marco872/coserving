@@ -62,7 +62,7 @@ h6 {
   <hr>    
       
 
-  <div class="container">
+ <div class="container">
 
 
       <div class="row">
@@ -73,7 +73,7 @@ h6 {
           <h5 style="color:black;">Location:</h5>
           <br>
         
-          {% for i in list %}
+          {% for i in value %}
           <tr>
           <td>{{i.location}}</td>
         </tr>
@@ -83,7 +83,9 @@ h6 {
         {% endfor %}
       </div>
 
-      
+
+
+
 
       <div class="col"style="margin-left: -40px;">
   
@@ -93,7 +95,7 @@ h6 {
 
     
          
-          {% for i in list %}
+          {% for i in value %}
         <tr>
           <strong><td>{{i.agreement_govern}}</td></strong>
         </tr>
@@ -108,7 +110,7 @@ h6 {
           <h5 style="margin-left: -40px">Agreement Investor:</h5>
           <br>
          
-          {% for i in list %}
+          {% for i in value %}
         <tr>
           <strong><td>{{i.agreement_investor}}</td></strong>
         </tr>
@@ -122,7 +124,7 @@ h6 {
           <h5 style="margin-left: -40px">Agreement Pr. Owner:</h5>
           <br>
          
-          {% for i in list %}
+          {% for i in value %}
         <tr>
           <strong><td>{{i.agreement_property_owner}}</td></strong>
         </tr>
@@ -136,7 +138,7 @@ h6 {
           <h5 style="margin-left: -40px">Agreement Tenant:</h5>
           <br>
          
-          {% for i in list %}
+          {% for i in value %}
         <tr>
           <strong><td>{{i.agreement_tenant}}</td></strong>
         </tr>

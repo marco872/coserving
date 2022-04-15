@@ -6,7 +6,7 @@ from django.http import HttpResponseRedirect
 
 from .models import *
 
-from .forms import VenueForm, LiquidityForm, CollateralForm
+from .forms import VenueForm, LiquidityForm, CollateralForm, CommitForm
 
 # Create your views here.
 
@@ -222,7 +222,8 @@ def news(request):
 
 def owner(request):
 	owner = Owner.objects.all()
-	context = {'list': owner}
+	commit = Commit.objects.all()
+	context = {'list': owner, 'value':commit }
 	
 	return render(request, 'co_servings/owner.html',context)
 
@@ -274,3 +275,18 @@ def gov(request):
 	context = {'list': collaterals }
 	return render(request, 'co_servings/gov.html',context )
 
+def commit(request):
+	submitted = False
+	form = CommitForm()
+	if request.method == "POST":
+		form = CommitForm(request.POST)
+		if form.is_valid():
+			form.save()
+			return HttpResponseRedirect('/commit?submitted=True')
+
+	else:
+		form = CommitForm()
+		if 'submitted' in request.GET:
+			submitted = True
+
+		return render(request, 'co_servings/commit.html', {'form':form, 'submitted':submitted })

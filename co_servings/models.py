@@ -460,3 +460,14 @@ class Apts(models.Model):
 		return self.name
 
 
+
+class Commit(models.Model):
+	location = models.CharField(max_length=200, blank=True, null=True)
+	agreement_govern = models.CharField(max_length=200, null=True)
+	agreement_investor = models.CharField(max_length=200, null=True)
+	agreement_property_owner = models.CharField(max_length=200, null=True)
+	agreement_tenant = models.CharField(max_length=200, null=True)
+	agreement_guest = models.CharField(max_length=200, null=True)
+	
+	def __str__(self):
+		return self.location
