@@ -3,7 +3,7 @@
 ul {
   
   margin-top: -25px;
-  margin-left: 70px;
+  margin-left: 40px;
  
  
   
@@ -24,7 +24,7 @@ ul {
       style="
       background-color: #c1a292;
         color: white;
-        font-size: large;
+        font-size: x-small;
         font-style: normal;
         font-weight: 500;
         margin-left: 10px; 
@@ -59,12 +59,13 @@ ul {
           aria-expanded="false"
 
         >
-          <strong>HOW DOES IT WORK</strong>
+          <strong>Step-by-Step</strong>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{% url 'development1' %}">Co-Serving</a>
-          <a class="dropdown-item" href="{% url 'white' %}">Platform</a>
-          <a class="dropdown-item" href="{% url 'how' %}">Blockchain</a>
+          <a class="dropdown-item" href="{% url 'development1' %}">Step-A:&nbsp Uploads</a>
+          <a class="dropdown-item" href="{% url 'white' %}">Step-B:&nbsp S-Actions</a>
+          <a class="dropdown-item" href="{% url 'how' %}">Step-C:&nbsp Blockchain/ Hybrid Smart Contract</a>
+          <a class="dropdown-item" href="{% url 'payment1' %}">Step-D:&nbsp Blockchain/ DeFi (Decentralized Finance)</a>
         </div>
       </li> 
 
@@ -97,38 +98,16 @@ ul {
           aria-haspopup="true"
           aria-expanded="false"
         >
-          <strong>Uploads</strong>
+          <strong><u>A-Uploads</u></strong>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-          <a class="dropdown-item" href="{% url 'collateral' %}">Add-Collateral</a>
-          <a class="dropdown-item" href="{% url 'liquidity' %}">Add-Liquidity</a>
-          <a class="dropdown-item" href="{% url 'venue' %}">Add-Projects</a>
-          <a class="dropdown-item" href="{% url 'commit' %}">Add-Commit</a>
+          <a class="dropdown-item" href="{% url 'collateral' %}" style="color:green;">Add-Collateral</a>
+          <a class="dropdown-item" href="{% url 'liquidity' %}" style="color:green;">Add-Liquidity</a>
+          <a class="dropdown-item" href="{% url 'venue' %}" style="color:red;" >Add-Project</a>
+         
         </div>
       </li>
-
-
-
-
-      <li class="nav-item active">
-        <a class="nav-link" href="{% url 'gov' %}"><u>Collaterals</u></a>
-
-
-      </li>
-
-       <li class="nav-item active">
-        <a class="nav-link" href="{% url 'liquiditypools' %}"><U>Liquidity Pools</U></a>
-      </li>
-
-      <li class="nav-item active">
-        <a class="nav-link" href="{% url 'projects' %}"><u>Projects</u></a>
-      </li>
-      
-      <li class="nav-item active">
-        <a class="nav-link" href="{% url 'development' %}"><u>Developments</u></a>
-      </li>
-     
 
       <li class="nav-item dropdown">
         <a
@@ -140,16 +119,59 @@ ul {
           aria-haspopup="true"
           aria-expanded="false"
         >
+
+
          
-         <strong><u>Actions</u></strong>
+         <strong><u>B- S-Actions</u></strong>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           
-          <a class="dropdown-item" href="{% url 'trading' %}">Agreements</a>
-          <a class="dropdown-item" href="{% url 'owner' %}">Commit Agreements</a>
-          <a class="dropdown-item" href="{% url 'guest' %}">Smart Contracts</a>
+          <a class="nav-link" href="{% url 'gov' %}"><u style="color:green;">Collaterals</u></a>
+           <a class="nav-link" href="{% url 'liquiditypools' %}"><U style="color:green;">Liquidity Pools</U></a>
+            <a class="nav-link" href="{% url 'projects' %}"><u style="color:red;">Projects</u></a>
         </div>
       </li>
+
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+
+
+
+      
+      
+     
+     
+
+      
+
+
+         
+        
+
+
+         <strong><u>C/D-Blockchain </u></strong>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{% url 'guest' %}"> Hybrid Smart Contracts</a>
+          <a class="dropdown-item" href="{% url 'payment2' %}"> DeFi (Decentrilized Finance)</a>
+        </div>
+      </li>
+
+
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'development' %}"><u style="color:red
+        ">Developments</u></a>
+      </li>
+
+
 
       {% if user.is_authenticated %}
       <li class="nav-item active">
@@ -170,6 +192,9 @@ ul {
 
 
       </li>
+
+
+
     </ul>
   </div>
 

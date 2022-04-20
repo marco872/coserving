@@ -1,13 +1,20 @@
 {% extends 'co_servings/main.html' %}
-
 {% load static %}
-
 
 
 {% block content %}
 <style type="text/css">
-.button {
 
+   <style type="text/css">
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
   margin: 4px 2px;
 }
 
@@ -22,66 +29,106 @@
 
 
 
-h6 {
-    color:black;
+
+h5 {
+    color: black;
   }
 
 
-  h1 {
+  h1, h6 {
     color: black;
-
   }
  
   h4, h5, td {
     color: black;
   }
- 
-
-
- 
 
 
   
 </style>
 
+{% load static %}
+
+
+
+
+
+
+
 <br>
 
 
-<div class="container" style="background-color:#bcaaa4; margin-top: -50Px; ">
 
-<h5 style="padding-top: 30px;color:#c0203c"><strong><u>Property Owners data:</u></strong> Property Owners provide Land  and select Design-Build project , from "Catalogue" in  main</h5> <h5 style="padding-top: 30px;color:#c0203c; margin-left: 220px; margin-top: -30px;">menu, for developments.</h5>
+<body style="background-color: lightblue">
 
-<br>
-
-	<div class="container">
-
-   
-      <h5 style="margin-left: 30px; color: #c0203c;">* Property Owners  upload in  main menu <strong>Uploads: " Add-Projects"</strong>  development data .</h5>
+<div class="container">
      
-       <h5 style="margin-left: 30px; color:#c0203c; ">* Property Owners check data in "Projects" main menu.</h5>
 
-      
-  	  
-  	
+      <h6 style="color:blue;margin-left: 0px; margin-top: -80px;"> <u>To execute Hybrid Smart Contracts in Ethereum Blockchain, stakeholders accept  the following Agreements and Coditions</u></h6>
 
-		<br>	
-      													
-	</div>
+        <br>
+     
 
-</div>
+        <br>
 
-  <br>
+        <p style="margin-left: 30px; color: black ; margin-top: -30px;"> <h6><u>Important note:</u> </h6><u><strong> Agreements are  authomatically executed </u></strong> when all  stakeholders' obbligations  are coded, signed and registered.</p>
 
-  <div>
+    <hr>
 
-   		  <div class="container" style="margin-left: : 100px; margin-bottom: -60px;" >
+    <h6> <strong>Agreements</strong> Governments: <em>(1)Government/Investor,(2) Government/Property Owners</em></h6>
+
+    <h6> <strong>Agreements</strong>  Investors: <em>(1)Investor/Property Ownner,(2) Investor/Tenant, (3) Investor/Guest</em></h6>
+
+     <h6><strong>Agreements</strong>  Property Owners: <em>Property Ownner/Design-Build Firm</em></h6>
+     <h6> <strong>Agreements</strong> Tenants: <em>(1)Tenant/Property Owner; (2)Tenant/Guest</em></h6>
+    <h6> <strong>Agreements</strong> Design-Build: <em>(1)Design-Build Firm/Government; (2)Design-Build Firm/Investor</em></h6>
+     <h6> <strong>Agreements</strong>  Guests: <em>Guest/Tenant/Investor </em></h6>
+
+
+        <hr>
+
+    <h6> <strong>1-Conditions</strong> Governments: <em>Garantee  €15M as Liquidity Pool collateral</em></h6>
+
+    <h6> <strong>2-Conditions</strong>  Investors: <em>Invest €15M to create Liquidity Pool</em></h6>
+
+
+     <h6><strong>3-Conditions</strong>  Property Owners: <em>(1)Property Ownner/Design-Build Firm to deliver construction project;(2)Property Owner/Government to deliver development;(3)Property Owner/Investor to deliver development;(4)Property Owner/Investor to pay back loan </em></h6>
+     <h6> <strong>4-Conditions</strong>  Tenants: <em>(1)Tenant/Property Owner/Investor to pay full rent value;(2)Tenant/Property Owner/Investor to accept and pay co-serving rent reduction conditions </em></h6>
+
+     <h6> <strong>5-Conditions</strong>  Guests: <em>Guest/Tenant/Investor to pay  rent value </em></h6>
+
+
   
-          <a href="{% url 'trading' %}">
+
+
+      <div class="container" style="margin-left: : 100px; margin-bottom: -60px;" >
+  
+          <a href="{% url 'fbm' %}">
                     
-                  <button class="button button4" style="background-color:lightblue; color:black; margin-left: 280px; padding: 40px; margin-top: 40px;font-size: x-large;"><strong><em>Property Owners</em></strong> Commitment</button>   
+                  <button class="button button4" style="background-color:darkgrey; color:white; margin-left: 290px; padding: 40px; margin-top: 40px;font-size: x-large;"> Review Agreements</button>   
                 </a> 
-         </div>         
+          
                 
+</div> 
+
+
+<br>     
+<br>
+
+      <div class="container" style="margin-left: : 100px; margin-bottom: -60px;" >
+  
+          <a href="{% url 'guest' %}">
+                    
+                  <button class="button button4" style="background-color:darkblue; color:white; margin-left: 270px; padding: 40px; margin-top: 40px;font-size: x-large;"> Hybrid Smart Contracts </button>   
+                </a> 
+          
+                
+</div> 
+
+
+
+
+
 
 
 

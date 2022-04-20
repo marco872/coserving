@@ -1,153 +1,124 @@
-
+{% extends 'co_servings/main.html' %}
 
 {% load static %}
 
-<!DOCTYPE html>
-<html>
-<head>
-	
+
+
+{% block content %}
+<style type="text/css">
+.button {
+
+  margin: 4px 2px;
+}
+
+.button1 {border-radius: 2px;}
+.button2 {border-radius: 4px;}
+.button3 {border-radius: 8px;}
+.button4 {border-radius: 12px;}
+.button5 {border-radius: 50%;}
+
+
+}
 
 
 
-
-	<meta name="viewport" content="width=device-width">
-
-	
-    
-	<title>CO-SERVING</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	
-	
-	<link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">
+h6 {
+    color:black;
+  }
 
 
+  h1 {
+    color: black;
+
+  }
+ 
+  h4, h5, td {
+    color: black;
+  }
+ 
 
 
-</head>
-<br>
-<body>
+ 
 
 
-
-	<div class="container">
-		{% if messages %}
-		  {% for message in messages %}
-		 
-		  <div class="alert alert-warning alert-dismissible fade show" role="alert">
-		  {{ message }}
-		  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-		  </button>
-		  </div>
-
-		  {% endfor %}
-    	{% endif %}
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
+</style>
 
-      <a href="{% url 'token' %}">
-                    
-                  <button class="button button4" style="color:green">Tenants</button>    
-
-                </a> 
-
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         Qualifications
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{% url 'information1' %}">Membership</a>
-          <a class="dropdown-item" href="{% url 'hostingrules' %}">Hosting Rules</a>
-          <a class="dropdown-item" href="{% url 'vaccineprotocol1' %}">Vaccine Protocol</a>
-          
-        </div>
-      </li>
-
-       
-
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
-        Benefits
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" href="{% url 'rentreduction' %}">Rent Reduction</a>
-        <a class="dropdown-item" href="{% url 'tokenprogram1' %}">Token Program</a>
-       
-        </div>
-
-
-     </li>
-
-     
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	
-
-        Downloads
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{% url 'venue' %}">Long Term Contracts</a>
-          <a class="dropdown-item" href="{% url 'liquidity' %}">Smart Contract</a>
-          
-        </div>
-      </li> 
+<h2 style="margin-left: 340px; margin-top: -40px; "><strong>What  Co-Serving does:</strong></h2>
 
 
 
-     
-      <li class="nav-item active">
-        <a class="nav-link" href="{% url 'rentopportunity' %}">2-Rental Opportunities</a>
-      </li>
+<hr>
 
-      <li class="nav-item active">
-        <a class="nav-link" href="{% url 'ourcommunity1' %}">Our Community</a>
-      </li>
+<h5 style="color:blue; margin-left: -100px;">"It combines web technology with urban planning to solve the top five problems facing stakeholders of real estate developments:"</h5>
+      
+      
 
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <div class="container">
+  
 
-         Tenant's Activities
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{% url 'payment1' %}">Payment</a>
-          <a class="dropdown-item" href="{% url 'overview1' %}">Overview</a>
-        </div>
-      </li>
+      <div class="row">
 
-     
+
+        <div class="col">
+
+        <h6 style="color:blue;">  1-GOVERNMENTS:</h6>
+        <hr>
+        <p style="color:darkred;"><em> Social Inequality </em>
+        
+
+        
+      </div>
+
+        <div class="col">
+
+        <h6 style="color:blue;">2-INVESTORS:</h6>
+        <hr>
+        <p style="color:darkred;margin-left:-30Px"><em> Real estate market volatility </em>
+        
+        
+      </div>
+
+      
+
+      <div class="col">
+
+        <h6 style="color:blue;"> 3-PROPERTY OWNERS:</h6>
+        <hr>
+        <p style="color:darkred;"><em>Effective purchasing power</em></p>
+      
+      </div>
+
+      <div class="col">
+
+        <h6 style="color:blue ;margin-left:40px; ">4-TENANTS:</h6>
+        <hr>
+        <p style="color:darkred; margin-left:40px;"><em> Rent controll .</em></p>
+
+      
+
+        
+      </div>
+      
+      
+
+      <div class="col">
+
+        <h6 style="color:blue;">5-GUESTS:</h6>
+        <hr>
+        <p style="color:darkred; margin-left:-40px"><em> Collaborative consumption.</em></p>
+
+      
+
+        
+      </div>
 
 
       
-      {% if user.is_authenticated %}
-      <li class="nav-item active">
-        <a class="nav-link" href="{% url 'logout' %}">Logout</a>
-      </li>
-      {% else %}
-      <li class="nav-item active">
-        <a class="nav-link" href="{% url 'register_user' %}">Register</a>
-      </li>
+    </div>
 
-       <li class="nav-item active">
-        <a class="nav-link" href="{% url 'login' %}">Login</a>
-      </li>
-      {% endif %}
-      
-    </ul>
   </div>
-</nav>
 
-<br>
-<br>
-<br>
-<br>
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+{% endblock %}
 
 
-<p>hello page information1></p>
-<h6>copyright@2021. impressum : marco carrano, viktoria luise platz 12, Berlin, 10777, Germany, mrc.carrano@gmail.com</h6>
