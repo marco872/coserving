@@ -1,151 +1,74 @@
+{% extends 'co_servings/main.html' %}
 {% load static %}
 
-<!DOCTYPE html>
-<html>
-<head>
-	
+
+{% block content %}
+<style type="text/css">
+
+   <style type="text/css">
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+.button1 {border-radius: 2px;}
+.button2 {border-radius: 4px;}
+.button3 {border-radius: 8px;}
+.button4 {border-radius: 12px;}
+.button5 {border-radius: 50%;}
+
+
+}
 
 
 
 
-	<meta name="viewport" content="width=device-width">
-
-	
-    
-	<title>CO-SERVING</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	
-	
-	<link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">
+h5 {
+    color: black;
+  }
 
 
+  h1, h6 {
+    color: black;
+  }
+ 
+  h4, h5, td {
+    color: black;
+  }
 
 
-</head>
-<br>
-<body>
-
-
-
-	<div class="container">
-		{% if messages %}
-		  {% for message in messages %}
-		 
-		  <div class="alert alert-warning alert-dismissible fade show" role="alert">
-		  {{ message }}
-		  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-		  </button>
-		  </div>
-
-		  {% endfor %}
-    	{% endif %}
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-
-      <a href="{% url 'token' %}">
-                    
-                  <button class="button button4" style="color:green">Tenants</button>    
-
-                </a> 
-
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         Qualifications
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{% url 'information1' %}">Membership</a>
-          <a class="dropdown-item" href="{% url 'hostingrules' %}">Hosting Rules</a>
-          <a class="dropdown-item" href="{% url 'vaccineprotocol1' %}">Vaccine Protocol</a>
-          
-        </div>
-      </li>
-
-       
-
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
-        Benefits
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" href="{% url 'rentreduction' %}">Rent Reduction</a>
-        <a class="dropdown-item" href="{% url 'tokenprogram1' %}">Token Program</a>
-       
-        </div>
-
-
-     </li>
-
-     
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	
-
-        Downloads
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{% url 'venue' %}">Long Term Contracts</a>
-          <a class="dropdown-item" href="{% url 'liquidity' %}">Smart Contract</a>
-          
-        </div>
-      </li> 
+</style>
 
 
 
-     
-      <li class="nav-item active">
-        <a class="nav-link" href="{% url 'rentopportunity' %}">2-Rental Opportunities</a>
-      </li>
+<body style="background-color: darkgrey;">
 
-      <li class="nav-item active">
-        <a class="nav-link" href="{% url 'ourcommunity1' %}">Our Community</a>
-      </li>
-
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
-         Tenant's Activities
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{% url 'payment1' %}">Payment</a>
-          <a class="dropdown-item" href="{% url 'overview1' %}">Overview</a>
-        </div>
-      </li>
-
-     
+{% load static %}
 
 
-      
-      {% if user.is_authenticated %}
-      <li class="nav-item active">
-        <a class="nav-link" href="{% url 'logout' %}">Logout</a>
-      </li>
-      {% else %}
-      <li class="nav-item active">
-        <a class="nav-link" href="{% url 'register_user' %}">Register</a>
-      </li>
+  <a class="dropdown-item" href="{% url 'commit' %}" style="color:orange;">Add-Commit</a>
 
-       <li class="nav-item active">
-        <a class="nav-link" href="{% url 'login' %}">Login</a>
-      </li>
-      {% endif %}
-      
-    </ul>
-  </div>
-</nav>
-
-<br>
-<br>
-<br>
-<br>
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+          <a class="dropdown-item" href="{% url 'owner' %}" style="color:orange;">Commited Agreements</a>
 
 
-<p>hello page overview 1></p>
-<h6>copyright@2021. impressum : marco carrano, viktoria luise platz 12, Berlin, 10777, Germany, mrc.carrano@gmail.com</h6>
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
+
+</body>
