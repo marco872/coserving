@@ -46,7 +46,172 @@ h6 {
 </style>
 
 
-<div class="container" style="background-color:#795548; margin-top: -30px;">
+<div class="container">
+  <hr>
+
+      <div class="row">
+
+<div class="col" style=" text-transform:lowercase;">
+          <h5>Location:</h5>
+          <br>
+        
+          {% for item in list %}
+          <tr>
+          <td>{{item.location}}</td>
+        </tr>
+        
+        <br>
+        <hr>
+        
+        {% endfor %}
+
+        {% for i in value %} 
+        
+          <tr>
+            
+            <td>{{i.location}}</td>
+          </tr>
+          
+          <br>
+          <hr>
+          
+          {% endfor %}
+        
+
+      </div>
+      
+
+      
+
+
+      <div class="col" style="text-transform:lowercase; margin-left: -150px;">
+          <h5>Category:</h5>
+          <br>
+         
+          {% for item in list %}
+        <tr>
+          <td>{{item.category}}</td>
+        </tr>
+        
+        <br>
+        <hr>
+        
+        {% endfor %}
+
+        {% for i in value %} 
+        
+          <tr>
+            
+            <td>{{i.category}}</td>
+          </tr>
+        
+          <br>
+          <hr>
+          
+          {% endfor %}
+        
+
+      </div>
+      
+
+      <div class="col" style="text-transform:lowercase; margin-left: -150px;">
+          <h5>Building:</h5>
+          <br>
+         
+          {% for item in list %}
+        <tr>
+          <td>{{item.building}}</td>
+        </tr>
+        
+        <br>
+        <hr>
+        
+        {% endfor %}
+
+        {% for i in value %} 
+        
+          <tr>
+            
+            <td>{{i.building}}</td>
+          </tr>
+          
+          <br>
+          <hr>
+          
+          {% endfor %}
+        </div>
+
+
+
+
+
+      
+      <div class="col" style="text-transform:lowercase; margin-left: -150px;">
+          <h5>Temp:</h5>
+          <br>
+         
+         
+
+        {% for i in value %} 
+        
+          <tr>
+            
+            <td>{{i.temp}}</td>
+          </tr>
+          
+          <br>
+          <hr>
+          
+          {% endfor %}  
+        
+
+      </div>
+
+</div>
+</div>
+
+
+
+<a href="{% url 'design1' %}">
+                    
+                  <button class="button button4" style="background-color:#795548; color:white; margin-left: 500px; padding-right: 10px;  margin-bottom: 30px;">  FBM-2</button>    
+
+                </a> 
+
+
+<a href="{% url 'design2' %}">
+                    
+                  <button class="button button4" style="background-color:#795548; color:white; margin-left: 50px; padding-right: 10px;  margin-bottom: 30px;">  FBM-3</button>    
+
+                </a> 
+
+<a href="{% url 'design3' %}">
+                    
+                  <button class="button button4" style="background-color:#795548; color:white; margin-left: 50px; padding-right: 10px;  margin-bottom: 30px;">  FBM-6</button>    
+
+                </a> 
+
+<a href="{% url 'design4' %}">
+                    
+                  <button class="button button4" style="background-color:#795548; color:white; margin-left: 50px; padding-right: 10px;  margin-bottom: 30px;">  FBM-10</button>    
+
+                </a> 
+
+<a href="{% url 'design5' %}">
+                    
+                  <button class="button button4" style="background-color:#795548; color:white; margin-left: 50px; padding-right: 10px;  margin-bottom: 30px;">  FBM-16</button>    
+
+                </a> 
+
+   
+         
+
+ 
+
+
+
+
+<div class="container" style="background-color:#795548; margin-top: -10px;">
 
 <h5 style="margin-left: 0px;color:#f9a40e; margin-top: 30px;padding-top: 30px;"><strong><u>Tenants data:</u></strong> Tenants select apartment , from "Catalogue" in  main menu and  calculate apartment's rent.</h5>
 

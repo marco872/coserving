@@ -236,7 +236,15 @@ def pro(request):
 	return render(request, 'co_servings/pro.html')
 
 def ten(request):
-	return render(request, 'co_servings/ten.html')
+	projects = Project.objects.all()
+	venue = Venue.objects.all()
+
+
+	context = {'list': projects, 'value': venue}
+	return render(request, 'co_servings/ten.html',context )
+	
+
+
 
 def sub(request):
 	return render(request, 'co_servings/sub.html')
@@ -290,3 +298,21 @@ def commit(request):
 			submitted = True
 
 		return render(request, 'co_servings/commit.html', {'form':form, 'submitted':submitted })
+
+
+
+def design1(request):
+	return render(request, 'co_servings/design1.html')
+
+
+def design2(request):
+	return render(request, 'co_servings/design2.html')
+
+def design3(request):
+	return render(request, 'co_servings/design3.html')
+
+def design4(request):
+	return render(request, 'co_servings/design4.html')
+
+def design5(request):
+	return render(request, 'co_servings/design5.html')

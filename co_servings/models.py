@@ -471,3 +471,44 @@ class Commit(models.Model):
 	
 	def __str__(self):
 		return self.location
+
+
+
+class Design1(models.Model):
+	name = models.CharField(max_length=200, blank=True, null=True)
+	
+	
+	def __str__(self):
+		return self.name
+
+
+class Design2(models.Model):
+	name = models.CharField(max_length=200, blank=True, null=True)
+	
+	
+	def __str__(self):
+		return self.name
+
+
+class Design3(models.Model):
+	name = models.CharField(max_length=200, blank=True, null=True)
+	
+	
+	def __str__(self):
+		return self.name
+
+
+class Design4(models.Model):
+	name = models.CharField(max_length=200, blank=True, null=True)
+	
+	
+	def __str__(self):
+		return self.name
+
+
+class Design5(models.Model):
+	name = models.CharField(max_length=200, blank=True, null=True)
+	
+	
+	def __str__(self):
+		return self.name

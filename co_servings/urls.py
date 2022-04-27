@@ -61,8 +61,11 @@ urlpatterns = [
     path('vigna/', views.vigna, name="vigna"),
     path('apts/', views.apts, name="apts"),
     path('commit/', views.commit, name="commit"),
-  
-
+    path('design1/', views.design1, name="design1"),
+    path('design2/', views.design2, name="design2"),
+    path('design3/', views.design3, name="design3"),
+    path('design4/', views.design4, name="design4"),
+    path('design5/', views.design5, name="design5"),
 
 
 
