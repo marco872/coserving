@@ -45,6 +45,8 @@ h6 {
   
 </style>
 
+<h2 style="color:brown;"> Rental Listings </h2>
+
 
 <div class="container">
   <hr>
@@ -172,9 +174,97 @@ h6 {
 
 
 
+
+
+
+
+<div class="container" style="background-color:#795548; margin-top: -10px;">
+
+
+
+
+	<div class="container">
+
+      <h5 style="margin-left: 30px; color: #f9a40e;">
+
+    
+
+ <a href="https://onedrive.live.com/view.aspx?resid=23B9E6708E88205A!64624&ithint=file%2cxlsx&authkey=!AOE3UJ028qnKI9g">
+
+      <button class="button button4" style="background-color:orange; color:white; margin-left: 60px; margin-top:30px; font-size: 30px; padding: 5px;"><strong>Rent Calculator</strong></button> </a>
+  <br>
+
+  <h5 style="margin-left: 0px;color:#f9a40e; margin-top: 0px;padding-top: 30px;">Rent for tenants after reductions and co-servicing incentives, calculated using the attached rent calculator </h5>
+
+
+  <hr>
+
+      <div class="row">
+
+
+
+     <img src="{% static 'images/rent1.PNG' %}"
+            style="object-fit:contain;
+            width:800px;
+            height:600px;
+           "/>
+
+
+
+      
+  </div>
+
+  <hr>
+
+      <div class="row">
+
+     <img src="{% static 'images/rent2.PNG' %}"
+            style="object-fit:contain;
+            width:800px;
+            height:600px;
+           "/>
+      
+  </div>
+  <br>
+
+
+  <hr>
+
+      <div class="row">
+
+     <img src="{% static 'images/rent3.PNG' %}"
+            style="object-fit:contain;
+            width:800px;
+            height:600px;
+           "/>
+      
+  </div>
+  <br>
+  <hr>
+
+      <div class="row">
+
+     <img src="{% static 'images/rent4.PNG' %}"
+            style="object-fit:contain;
+            width:800px;
+            height:600px;
+           "/>
+      
+  </div>
+  <br>
+
+</div>
+
+</div>
+
+<br>
+
+<h5 style="color:brown; margin-top: 40px; margin-left: 10px;"> Tenants' Rent  opportunities: </h5>
+
+
 <a href="{% url 'design1' %}">
                     
-                  <button class="button button4" style="background-color:#795548; color:white; margin-left: 500px; padding-right: 10px;  margin-bottom: 30px;">  FBM-2</button>    
+                  <button class="button button4" style="background-color:#795548; color:white; margin-left: padding-right: 10px;  margin-bottom: 30px;">  FBM-2</button>    
 
                 </a> 
 
@@ -206,40 +296,11 @@ h6 {
    
          
 
- 
+ <br>
 
-
-
-
-<div class="container" style="background-color:#795548; margin-top: -10px;">
-
-<h5 style="margin-left: 0px;color:#f9a40e; margin-top: 30px;padding-top: 30px;"><strong><u>Tenants data:</u></strong> Tenants select apartment , from "Catalogue" in  main menu and  calculate apartment's rent.</h5>
-
-
-
-	<div class="container">
-
-      <h5 style="margin-left: 30px; color: #f9a40e;">
-
-    
-
- <a href="https://onedrive.live.com/view.aspx?resid=23B9E6708E88205A!64624&ithint=file%2cxlsx&authkey=!AOE3UJ028qnKI9g">
-
-      <button class="button button4" style="background-color:orange; color:white; margin-left: 90px; font-size: 30px; padding: 5px;"><strong>Rent Calculator</strong></button> </a>
-  <br>
-
-     <h5 style="margin-left: 30px; color: #f9a40e ;">* Tenants  registration .</h5>
-     <h5 style="margin-left: 30px; color: #f9a40e ;">* Tenants upload in  main menu <strong>Uploads: " Add-project" (subject:rented)</strong> rent data.
-    
-       <h5 style="margin-left: 30px; color:#f9a40e ; ">*   Tenants check rental status in "Projects" main menu.</h5>
-
-      
-  </div>
-
-  <br>
-
+ <div id="booking" class="section"> <div class="section-center"> <div class="container"> <div class="row"> <div class="booking-form"> <div class="form-header"> <h1>Select your apartment</h1> </div>
+  <form> <div class="form-group"> <input class="form-control" type="text" placeholder="Country, city, project code..."> <span class="form-label">Location</span> </div> <div class="row"> <div class="col-md-6"> <div class="form-group"> <input class="form-control" type="date" required> <span class="form-label">Lease starting</span> </div> </div> <div class="col-md-6"> <div class="form-group"> <input class="form-control" type="date" required> <span class="form-label">Lease ending</span> </div> </div> </div> <div class="row"> <div class="col-md-4"> <div class="form-group"> <select class="form-control" required> <option value="" selected hidden>building type</option> <option>fbm-2</option> <option>fbm-3</option> <option>fbm-6</option> <option>fbm-10</option> <option>fbm-16</option></select> <span class="select-arrow"></span> <span class="form-label">Building type</span> </div> </div> <div class="col-md-4"> <div class="form-group"> <select class="form-control" required> <option value="" selected hidden>apartment n.</option> <option>1</option> <option>2</option> <option>3</option> <option>4</option> <option>5</option> <option>6</option> <option>7</option> <option>8</option> </select> <span class="select-arrow"></span> <span class="form-label">Apartment number</span> </div> </div> <div class="col-md-4"> <div class="form-group"> <select class="form-control" required> <option value="" selected hidden>apartment type</option> <option>A</option> <option>B</option> <option>C</option> <option>D</option></select> <span class="select-arrow"></span> <span class="form-label">Apartment type</span> </div> </div> </div> <div class="row"> <div class="col-md-6"> <div class="form-group"> <input class="form-control" type="email" placeholder="Enter your Email"> <span class="form-label">Email</span> </div> </div> <div class="col-md-6"> <div class="form-group"> <input class="form-control" type="tel" placeholder="Enter you Phone"> <span class="form-label">Phone</span> </div> </div> </div> <div class="form-btn"> <button class="submit-btn">Book Now</button> </div> </form> </div> </div> </div> </div>
 </div>
-
 
 <br>
 

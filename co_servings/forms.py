@@ -16,6 +16,7 @@ class VenueForm(ModelForm):
 			'location': forms.TextInput(attrs={'class':'form-control'}),
 			'name': forms.TextInput(attrs={'class':'form-control'}),
 			'building': forms.TextInput(attrs={'class':'form-control'}),
+			
 			'total_project_price': forms.TextInput(attrs={'class':'form-control'}),
 			'temp': forms.TextInput(attrs={'class':'form-control'}),
 			'total_cost': forms.TextInput(attrs={'class':'form-control'}),
