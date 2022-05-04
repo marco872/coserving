@@ -512,3 +512,24 @@ class Design5(models.Model):
 	
 	def __str__(self):
 		return self.name
+
+class Booking(models.Model):
+	
+
+	
+	project = models.CharField(max_length=200, null=True)
+	name = models.CharField(max_length=200, null=True)
+	building = models.CharField(max_length=200, null=True)
+	duplex = models.CharField(max_length=200, null=True)
+	number = models.CharField(max_length=200, null=True)
+	starting = models.CharField(max_length=200, null=True)
+	email = models.CharField(max_length=200, null=True)
+	phone = models.CharField(max_length=200, null=True)
+
+
+	
+
+	def __str__(self):
+		return self.name
+
+

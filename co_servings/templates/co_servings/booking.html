@@ -1,0 +1,74 @@
+{% extends 'co_servings/main.html' %}
+
+{% block content %}
+<style type="text/css">
+.button {
+
+  margin: 4px 2px;
+}
+
+.button1 {border-radius: 2px;}
+.button2 {border-radius: 4px;}
+.button3 {border-radius: 8px;}
+.button4 {border-radius: 12px;}
+.button5 {border-radius: 50%;}
+
+
+}
+
+
+
+h6 {
+    color:black;
+  }
+
+
+  h1 {
+    color: black;
+
+  }
+ 
+  h4, h5, td {
+    color: black;
+  }
+ 
+
+
+ 
+
+
+  
+</style>
+
+
+{% if user.is_authenticated %}
+
+  <h1>Select your Apartment</h1>
+  <br/><br/>
+  {% if submitted %}
+
+      Your SELECTION was Submitted Succefully!!!
+
+  {% else %}
+
+	<form action=" " method="POST">
+	  	{% csrf_token %}
+
+	  	{{ form.as_p }}
+
+	  	<input type="submit" value="Submit" class="btn btn-secondary">
+
+	</form>
+
+   {% endif %}
+
+<br/><br/>
+
+{% else %}
+<h1>Sorry! You Must Be Logged In To View This Page...</h1>
+<a href="{% url 'login' %}">Login Here</a>
+
+  
+{% endif %}
+
+{% endblock %}

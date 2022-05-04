@@ -6,7 +6,7 @@ from django.http import HttpResponseRedirect
 
 from .models import *
 
-from .forms import VenueForm, LiquidityForm, CollateralForm, CommitForm
+from .forms import VenueForm, LiquidityForm, CollateralForm, CommitForm, BookingForm
 
 # Create your views here.
 
@@ -91,6 +91,7 @@ def development(request):
 	venue = Venue.objects.all()
 	liquidity = Liquidity.objects.all()
 	development = Development.objects.all()
+
 
 	context = {'list': projects, 'value': venue, 'topic': liquidity, 'agreement':development}
 	return render(request, 'co_servings/development.html',context )
@@ -247,7 +248,13 @@ def ten(request):
 
 
 def sub(request):
-	return render(request, 'co_servings/sub.html')
+	projects = Project.objects.all()
+	venue = Venue.objects.all()
+
+
+	context = {'list': projects, 'value': venue}
+	return render(request, 'co_servings/sub.html',context)
+
 def impressum(request):
 	return render(request, 'co_servings/impressum.html')
 def vigna(request):
@@ -316,3 +323,20 @@ def design4(request):
 
 def design5(request):
 	return render(request, 'co_servings/design5.html')
+
+
+def booking(request):
+	submitted = False
+	form = BookingForm()
+	if request.method == "POST":
+		form = BookingForm(request.POST)
+		if form.is_valid():
+			form.save()
+			return HttpResponseRedirect('/booking?submitted=True')
+
+	else:
+		form = BookingForm()
+		if 'submitted' in request.GET:
+			submitted = True
+
+		return render(request, 'co_servings/booking.html', {'form':form, 'submitted':submitted })

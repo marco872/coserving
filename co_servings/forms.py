@@ -1,6 +1,6 @@
 from django import forms
 from django.forms import ModelForm
-from .models import Venue, Liquidity, Collateral, Commit 
+from .models import Venue, Liquidity, Collateral, Commit, Booking 
 
 
 class VenueForm(ModelForm):
@@ -81,3 +81,19 @@ class CommitForm(ModelForm):
 		
 		 
 
+class BookingForm(ModelForm):
+	class Meta:
+		model = Booking
+		fields = ('project', 'name', 'building', 'duplex', 'number', 'starting', 'email', 'phone' )
+
+		widgets = {
+			'project': forms.TextInput(attrs={'class':'form-control'}),
+			'name': forms.TextInput(attrs={'class':'form-control'}),
+			'building': forms.TextInput(attrs={'class':'form-control'}),
+			'duplex': forms.TextInput(attrs={'class':'form-control'}),
+			'number': forms.TextInput(attrs={'class':'form-control'}),
+			'starting': forms.TextInput(attrs={'class':'form-control'}),
+			'email': forms.TextInput(attrs={'class':'form-control'}),
+			'phone': forms.TextInput(attrs={'class':'form-control'}),
+
+		}	
